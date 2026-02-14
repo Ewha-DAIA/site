@@ -1,31 +1,20 @@
 import { CONFIG } from '../config.js';
-import { resolveUrl } from '../utils/dataLoader.js';
+import { loadData } from '../utils/dataLoader.js';
 
 export async function mount() {
   let images = [];
   
   try {
-    const response = await fetch(resolveUrl('./assets/home/'));
-    const html = await response.text();
-    
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-    const links = doc.querySelectorAll('a');
-    
-    links.forEach(link => {
-      const filename = link.getAttribute('href');
-      if (filename && /\.(jpg|jpeg|png|gif|webp|svg)$/i.test(filename)) {
-        images.push(resolveUrl(`assets/home/${filename}`));
-      }
-    });
-    
+    const imageList = await loadData('home-images.json');
+    if (imageList && imageList.length > 0) {
+      images = imageList.map(path => `./${path}`);
+    }
   } catch (error) {
     console.error('Failed to load images:', error);
-    images = [resolveUrl('assets/home/ewha.jpg')];
   }
   
   if (images.length === 0) {
-    images = [resolveUrl('assets/home/ewha.jpg')];
+    images = ['./assets/home/background_1.jpg'];
   }
   
   const slider = document.getElementById('home-visual-slider');
@@ -69,7 +58,7 @@ export async function mount() {
 export default async function Home() {
   let news = [];
   try {
-    const newsResponse = await fetch(resolveUrl('data/news.json'));
+    const newsResponse = await fetch('./data/news.json');
     news = await newsResponse.json();
     news.sort((a, b) => b.date.localeCompare(a.date));
   } catch (error) {
@@ -78,7 +67,7 @@ export default async function Home() {
 
   let projects = [];
   try {
-    const response = await fetch(resolveUrl('data/projects.json'));
+    const response = await fetch('./data/projects.json');
     projects = await response.json();
   } catch (error) {
     console.error('Failed to load projects:', error);
