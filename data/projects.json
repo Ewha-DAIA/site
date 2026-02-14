@@ -8,7 +8,7 @@
         "description": "Develop a legal document retrieval system by vectorizing legal document repository using vector database. Build a multi-agent AI chatbot that provides intelligent legal document search and analysis capabilities.",
         "description_ko": "벡터 데이터베이스를 사용하여 법률 문서 저장소를 벡터화하여 법률 문서 검색 시스템을 개발합니다. 지능형 법률 문서 검색 및 분석 기능을 제공하는 멀티 에이전트 AI 챗봇을 구축합니다.",
         "status": "Active",
-        "image": "/assets/projects/robot_arm.png",
+        "image": "./assets/projects/robot_arm.png",
         "tags": [
             "LLM",
             "Vector DB",

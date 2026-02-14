@@ -10,10 +10,10 @@ export default async function Professor() {
   const renderSocial = (social) => {
     if (!social) return '';
     let html = '<div class="member-social">';
-    if (social.cv) html += `<a href="${social.cv}" target="_blank" title="CV" onclick="event.stopPropagation()"><img src="/assets/imoticon/cv.png" alt="CV"></a>`;
-    if (social.github) html += `<a href="${social.github}" target="_blank" title="GitHub" onclick="event.stopPropagation()"><img src="/assets/imoticon/github.png" alt="GitHub"></a>`;
-    if (social.linkedin) html += `<a href="${social.linkedin}" target="_blank" title="LinkedIn" onclick="event.stopPropagation()"><img src="/assets/imoticon/linkedin.png" alt="LinkedIn"></a>`;
-    if (social.scholar) html += `<a href="${social.scholar}" target="_blank" title="Google Scholar" onclick="event.stopPropagation()"><img src="/assets/imoticon/scholar.png" alt="Scholar"></a>`;
+    if (social.cv) html += `<a href="${social.cv}" target="_blank" title="CV" onclick="event.stopPropagation()"><img src="./assets/imoticon/cv.png" alt="CV"></a>`;
+    if (social.github) html += `<a href="${social.github}" target="_blank" title="GitHub" onclick="event.stopPropagation()"><img src="./assets/imoticon/github.png" alt="GitHub"></a>`;
+    if (social.linkedin) html += `<a href="${social.linkedin}" target="_blank" title="LinkedIn" onclick="event.stopPropagation()"><img src="./assets/imoticon/linkedin.png" alt="LinkedIn"></a>`;
+    if (social.scholar) html += `<a href="${social.scholar}" target="_blank" title="Google Scholar" onclick="event.stopPropagation()"><img src="./assets/imoticon/scholar.png" alt="Scholar"></a>`;
     html += '</div>';
     return html;
   };

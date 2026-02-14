@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "첫 이미지",
-        "image": "/assets/gallery/IMG_5039.jpg",
+        "image": "./assets/gallery/IMG_5039.jpg",
         "year": "2026",
         "semester": "Spring"
     }

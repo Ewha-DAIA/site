@@ -5,7 +5,7 @@ export default function Header() {
     <nav class="navbar">
       <div class="logo">
         <a href="#/">
-          <img src="/assets/ewha/symbol.png" alt="Ewha Logo" class="logo-image">
+          <img src="./assets/ewha/symbol.png" alt="Ewha Logo" class="logo-image">
           <span class="logo-text">${CONFIG.LAB_NAME}</span>
         </a>
       </div>

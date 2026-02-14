@@ -2,7 +2,7 @@ import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 
 const routes = {
-  '/': () => import('./pages/Home.js?v=4'),
+  '/': () => import('./pages/Home.js?v=5'),
   '/people': () => {
     // Redirect to professor by default
     window.location.hash = '#/people/professor';

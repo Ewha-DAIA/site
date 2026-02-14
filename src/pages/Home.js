@@ -1,10 +1,11 @@
 import { CONFIG } from '../config.js';
+import { resolveUrl } from '../utils/dataLoader.js';
 
 export async function mount() {
   let images = [];
   
   try {
-    const response = await fetch('/assets/home/');
+    const response = await fetch(resolveUrl('assets/home/'));
     const html = await response.text();
     
     const parser = new DOMParser();
@@ -14,17 +15,17 @@ export async function mount() {
     links.forEach(link => {
       const filename = link.getAttribute('href');
       if (filename && /\.(jpg|jpeg|png|gif|webp|svg)$/i.test(filename)) {
-        images.push(`/assets/home/${filename}`);
+        images.push(resolveUrl(`assets/home/${filename}`));
       }
     });
     
   } catch (error) {
     console.error('Failed to load images:', error);
-    images = ['/assets/home/ewha.jpg'];
+    images = [resolveUrl('assets/home/ewha.jpg')];
   }
   
   if (images.length === 0) {
-    images = ['/assets/home/ewha.jpg'];
+    images = [resolveUrl('assets/home/ewha.jpg')];
   }
   
   const slider = document.getElementById('home-visual-slider');
@@ -68,7 +69,7 @@ export async function mount() {
 export default async function Home() {
   let news = [];
   try {
-    const newsResponse = await fetch('/data/news.json');
+    const newsResponse = await fetch(resolveUrl('data/news.json'));
     news = await newsResponse.json();
     news.sort((a, b) => b.date.localeCompare(a.date));
   } catch (error) {
@@ -77,7 +78,7 @@ export default async function Home() {
 
   let projects = [];
   try {
-    const response = await fetch('/data/projects.json');
+    const response = await fetch(resolveUrl('data/projects.json'));
     projects = await response.json();
   } catch (error) {
     console.error('Failed to load projects:', error);
