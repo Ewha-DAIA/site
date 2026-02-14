@@ -1,0 +1,42 @@
+[
+  {
+    "id": "C3",
+    "title": "Semi Supervised Layer Anomaly Detection Model of Multivariate Time Series in Manufacturing",
+    "authors": "김연모, **김상엽†**",
+    "venue": "한국컴퓨터종합학술대회 (KCC) 2023",
+    "year": "Before 2025",
+    "type": "domestic",
+    "link": "#",
+    "image": "https://via.placeholder.com/100/64748b/ffffff?text=KCC",
+    "tags": [
+      "이상탐지",
+      "시계열"
+    ]
+  },
+  {
+    "id": "C2",
+    "title": "공공데이터를 활용한 머신러닝 기반 상업용 건물 가격 추정 : l. 공공데이터, 소스데이터 확보 및 전처리",
+    "authors": "**김상엽**, 전성환, 최진우, 강인혜, 이중건, 조성준†",
+    "venue": "대한산업공학회 (KIIE) 2019",
+    "year": "Before 2025",
+    "type": "domestic",
+    "link": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE08009341",
+    "tags": [
+      "상업용분동산",
+      "전처리"
+    ]
+  },
+  {
+    "id": "C1",
+    "title": "공공데이터를 활용한 머신러닝 기반 상업용 건물 가격 추정 : Ⅱ. 건물 매매가 추정 모델 구축",
+    "authors": "최진우, 전성환, **김상엽**, 강인혜, 이중건, 조성준†",
+    "venue": "대한산업공학회 (KIIE) 2019",
+    "year": "Before 2025",
+    "type": "domestic",
+    "link": "https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE08009342",
+    "tags": [
+      "상업용분동산",
+      "가격 예측"
+    ]
+  }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "icon": "🤖",
+        "title": "Multi-Agent Systems",
+        "title_ko": "멀티 에이전트 시스템",
+        "description": "We design systems where multiple AI agents collaborate to solve complex tasks—decomposing problems, sharing context, and reaching consensus through autonomous planning and coordination.",
+        "description_ko": "여러 AI 에이전트가 협업하여 복잡한 문제를 해결하는 시스템을 설계합니다. 문제를 분해하고, 맥락을 공유하며, 자율적 계획과 조율을 통해 합의에 도달하는 에이전트 오케스트레이션 기술을 연구합니다. 에이전트가 API를 호출하고, 데이터베이스를 질의하며, 소프트웨어를 조작하여 정보를 행동으로 전환하는 도구 증강 지능을 구현합니다.",
+        "keywords": [
+            "Multi-Agent Orchestration",
+            "Autonomous Planning",
+            "Tool-Augmented Intelligence"
+        ]
+    },
+    {
+        "id": 2,
+        "icon": "🔍",
+        "title": "Information Retrieval",
+        "title_ko": "정보 검색",
+        "description": "We build neural search systems that go beyond keyword matching—agents navigate and connect information across heterogeneous sources using dense retrieval and retrieval-augmented generation (RAG).",
+        "description_ko": "단순 키워드 매칭을 넘어, 이기종 소스에서 정보를 탐색하고 연결하는 신경망 검색 시스템을 구축합니다. 밀집 검색(Dense Retrieval)과 검색 증강 생성(RAG)을 결합하여, 사람이 직접 데이터를 훑는 대신 AI가 인사이트를 추출하고 종합하는 데이터 분석의 새로운 패러다임을 만듭니다.",
+        "keywords": [
+            "Dense Retrieval",
+            "Retrieval-Augmented Generation",
+            "Semantic Search"
+        ]
+    },
+    {
+        "id": 3,
+        "icon": "🧠",
+        "title": "Large Language Models",
+        "title_ko": "거대 언어 모델",
+        "description": "Starting from natural language understanding, we expand into multimodal intelligence—integrating vision, text, and structured data to build models that reason across modalities and generate meaning.",
+        "description_ko": "자연어 이해에서 출발하여 멀티모달 지능으로 확장합니다. 텍스트, 비전, 구조화된 데이터를 통합하여 모달리티를 넘나들며 추론하고 의미를 생성하는 모델을 연구합니다. LLM의 학습, 추론, 생성 전 과정에서 성능과 효율성을 높이는 방법론을 탐구합니다.",
+        "keywords": [
+            "Large Language Models",
+            "Multimodal AI",
+            "Reasoning & Generation"
+        ]
+    },
+    {
+        "id": 4,
+        "icon": "🏭",
+        "title": "Domain-Specific Industrial AI",
+        "title_ko": "도메인 특화 산업 AI",
+        "description": "We work directly with domain experts in manufacturing, finance, law, and healthcare to build AI tailored to each field's data and constraints—not off-the-shelf, but purpose-built.",
+        "description_ko": "제조, 금융, 법률, 의료 분야의 현장 전문가들과 직접 협업합니다. 범용 모델이 아닌, 각 도메인 고유의 데이터 특성과 운영 제약에 맞춘 맞춤형 AI 솔루션을 구축합니다. 이상 탐지, 가상 계측, 법률 문서 분석 등 실제 현장에서 가치를 만드는 연구를 수행합니다.",
+        "keywords": [
+            "Manufacturing AI",
+            "Legal AI",
+            "Anomaly Detection",
+            "Domain Adaptation"
+        ]
+    },
+    {
+        "id": 5,
+        "icon": "🛡️",
+        "title": "Trustworthy & Safe AI",
+        "title_ko": "신뢰할 수 있는 AI",
+        "description": "We address the core question: 'Why should we trust this AI?' Through safety guardrails, explainability, and red teaming, we ensure AI systems are reliable—applied across our agent, retrieval, and industrial research.",
+        "description_ko": "'왜 이 AI를 믿어야 하는가'라는 핵심 질문에 답합니다. 안전성 가드레일, 설명 가능성, 레드티밍을 통해 AI 시스템의 신뢰성을 보장합니다. 이를 독립된 주제가 아닌, 에이전트·정보 검색·산업 AI 등 모든 연구 분야에 적용하여 실전에서 신뢰할 수 있는 AI를 만듭니다.",
+        "keywords": [
+            "AI Safety & Guardrails",
+            "Explainable AI (XAI)",
+            "Red Teaming"
+        ]
+    }
+]

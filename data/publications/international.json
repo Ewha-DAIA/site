@@ -1,0 +1,201 @@
+[
+  {
+    "id": "U2",
+    "title": "Beyond Factual Accuracy: A Benchmark for Evaluating Perspective Alignment in LLMs",
+    "authors": "Sunghoon Kim, **Sangyeop Kim†**",
+    "venue": "",
+    "year": "Under Review",
+    "link": "",
+    "tags": [
+      "AI Alignment",
+      "Benchmark"
+    ]
+  },
+  {
+    "id": "U1",
+    "title": "Understanding User Perception of Human-LLM Collaboration in AI-Assisted Decision-Making",
+    "authors": "Sohhyung Park*, Junguk Ha*, Hangyeul Lee*, **Sangyeop Kim**, Sungzoon Cho†",
+    "venue": "",
+    "year": "Under Review",
+    "link": "",
+    "tags": [
+      "HCI",
+      "LLM"
+    ]
+  },
+  {
+    "id": "J2",
+    "title": "Fashion Image Retrieval with Vision-Language Model Guided Fine-Grained Textual Attributes and Cross-Domain Contrastive Optimization",
+    "authors": "Eojin Kim, **Sangyeop Kim**, Cholhwan Jung, Youngseok Hahm, Sungzoon Cho†",
+    "venue": "IEEE Access",
+    "year": "2025",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11235935",
+    "tags": [
+      "Fashion",
+      "Image Retrieval"
+    ],
+    "badges": [
+      "SCIE"
+    ]
+  },
+  {
+    "id": "J1",
+    "title": "Fusing Sequential Recommender and Ad-hoc Planner for Multi-faceted Preference Understanding in Conversational Recommendation",
+    "authors": "**Sangyeop Kim**, Jaewon Jung, Taeseung You, Sungzoon Cho†",
+    "venue": "Information Fusion\n(JCR top 2.21%)",
+    "year": "2025",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525007973",
+    "tags": [
+      "RL",
+      "CRS",
+      "Recommendation"
+    ],
+    "badges": [
+      "SCIE"
+    ]
+  },
+  {
+    "id": "J3",
+    "title": "Human-Guided Collective LLM Intelligence for Strategic Planning via Two-Stage Information Retrieval",
+    "authors": "**Sangyeop Kim**, Junguk Ha, Hangyeul Lee, Sohhyung Park, Sungzoon Cho†",
+    "venue": "Information Processing & Management (JCR top 4.46%)",
+    "year": "2026",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0306457325002298",
+    "tags": [
+      "Multi-Agent",
+      "Retrieval",
+      "Business Report"
+    ],
+    "badges": [
+      "SCIE"
+    ]
+  },
+  {
+    "id": "C8",
+    "title": "Finding Diamonds in Conversation Haystacks: A Benchmark for Conversational Data Retrieval",
+    "authors": "Yohan Lee, Yongwoo Song, **Sangyeop Kim†**",
+    "venue": "EMNLP 2025\n(Industry Track)",
+    "year": "2025",
+    "link": "https://aclanthology.org/2025.emnlp-industry.162/",
+    "tags": [
+      "Conversational Data Retrieval",
+      "Benchmark"
+    ]
+  },
+  {
+    "id": "C7",
+    "title": "Pre-Storage Reasoning for Episodic Memory: Shifting Inference Burden to Memory for Personalized Dialogue",
+    "authors": "**Sangyeop Kim***, Yohan Lee*, Sanghwa Kim, Hyunjong Kim, Sungzoon Cho†",
+    "venue": "Findings of EMNLP 2025",
+    "year": "2025",
+    "link": "https://aclanthology.org/2025.findings-emnlp.1204/",
+    "tags": [
+      "LLM",
+      "Memory"
+    ],
+    "badges": [
+      "우수"
+    ]
+  },
+  {
+    "id": "C6",
+    "title": "Upcycling Candidate Tokens of Large Language Models for Query Expansion",
+    "authors": "Jinseok Kim, Sukmin Cho, Soyeong Jeong, **Sangyeop Kim**, Sungzoon Cho†",
+    "venue": "CIKM 2025",
+    "year": "2025",
+    "link": "https://dl.acm.org/doi/10.1145/3746252.3760895",
+    "tags": [
+      "Retrieval",
+      "Query Expansion"
+    ],
+    "badges": [
+      "최우수"
+    ]
+  },
+  {
+    "id": "C5",
+    "title": "What Really Matters in Many-Shot Attacks? An Empirical Study of Long-Context Vulnerabilities in LLMs",
+    "authors": "**Sangyeop Kim***, Yohan Lee*, Yongwoo Song*, Kimin Lee†",
+    "venue": "ACL 2025",
+    "year": "2025",
+    "link": "https://aclanthology.org/2025.acl-long.101/",
+    "tags": [
+      "AI Safety",
+      "LLM",
+      "Long-Context"
+    ],
+    "badges": [
+      "최우수"
+    ]
+  },
+  {
+    "id": "C4",
+    "title": "EXPERT: An Explainable Image Captioning Evaluation Metric with Structured Explanations",
+    "authors": "Hyunjong Kim, **Sangyeop Kim**, Jongheon Jeong, Yeongjae Cho, Sungzoon Cho†",
+    "venue": "Findings of ACL 2025",
+    "year": "2025",
+    "link": "https://aclanthology.org/2025.findings-acl.1367/",
+    "tags": [
+      "Image Captioning",
+      "Evaluation"
+    ],
+    "badges": [
+      "우수"
+    ]
+  },
+  {
+    "id": "C3",
+    "title": "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue",
+    "authors": "**Sangyeop Kim**, Sohhyung Park, Jaewon Jung, Jinseok Kim, Sungzoon Cho†",
+    "venue": "NAACL 2025",
+    "year": "2025",
+    "link": "https://aclanthology.org/2025.naacl-long.523/",
+    "tags": [
+      "User Satisfaction Estimation",
+      "Dialogue"
+    ],
+    "badges": [
+      "최우수"
+    ]
+  },
+  {
+    "id": "C2",
+    "title": "HEISIR: Hierarchical Expansion of Inverted Semantic Indexing for Training-free Retrieval of Conversational Data using LLMs",
+    "authors": "**Sangyeop Kim†**, Hangyeul Lee, Yohan Lee",
+    "venue": "Findings of NAACL 2025",
+    "year": "2025",
+    "link": "https://aclanthology.org/2025.findings-naacl.397/",
+    "tags": [
+      "Retrieval",
+      "Lingustics",
+      "Indexing"
+    ],
+    "badges": [
+      "우수"
+    ]
+  },
+  {
+    "id": "W1",
+    "title": "Safe-Embed: Unveiling the Safety-Critical Knowledge of Sentence Encoders",
+    "authors": "Jinseok Kim, Jaewon Jung, **Sangyeop Kim**, Sohhyung Park, Sungzoon Cho†",
+    "venue": "KnowledgeLM@ACL 2024",
+    "year": "Before 2025",
+    "link": "https://aclanthology.org/2024.knowllm-1.13/",
+    "tags": [
+      "AI Safety",
+      "NLP"
+    ]
+  },
+  {
+    "id": "C1",
+    "title": "Alternate Multitask Learning Method for Fault Detection Model in Semiconductor Manufacturing",
+    "authors": "**Sangyeop Kim**, Sungzoon Cho†",
+    "venue": "PHMAP 2021",
+    "year": "Before 2025",
+    "link": "",
+    "tags": [
+      "Manufacturing",
+      "Multitask Learning"
+    ]
+  }
+]

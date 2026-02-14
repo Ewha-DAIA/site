@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "code": "39221",
+        "name": "소셜 인텔리전스",
+        "name_eng": "Social Intelligence",
+        "semester": "Spring 2026",
+        "graduate": false
+    },
+    {
+        "id": 2,
+        "code": "39223",
+        "name": "의사결정론",
+        "name_eng": "Data-Driven Decsion Making Theory",
+        "semester": "Spring 2026",
+        "graduate": false
+    },
+    {
+        "id": 3,
+        "code": "G188779",
+        "name": "고급비즈니스애널리틱스",
+        "name_eng": "Advanced Business Analytics",
+        "semester": "Spring 2026",
+        "graduate": true
+    }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "Sangyeop Kim",
+    "role": "Assistant Professor",
+    "department": "Department of Data Science, Ewha Womans University",
+    "bio": "Sangyeop Kim received the B.S., M.S., and Ph.D. degrees in Industrial Engineering from Seoul National University, Seoul, Korea, in 2019, 2021, and 2025, respectively. His Ph.D. thesis focused on the integration of Large Language Models and Information Retrieval for semantic search, recommendation, and user analysis. He is currently an Assistant Professor at Ewha Womans University. Before joining academia, he served as an AI Lead at Coxwave (2023–2025), developing conversation analytics solutions, and at RTM (2020–2023), leading the deployment of manufacturing AI systems at Intel's semiconductor fabrication plant. He also worked as an AI Consultant at Kim & Chang. His research interests include Multimodal AI, Data Science for Information Systems, Semantic Search, and Trustworthy AI Systems.",
+    "image": "../assets/people/sangyeop.jpg",
+    "contact": {
+      "office": "Ewha Jinseonmi-gwan 418",
+      "tel": "+82-2-3277-4077",
+      "email": "yeop@ewha.ac.kr"
+    },
+    "social": {
+      "email": "sy917kim@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/sangyeop-kim-a6242a207/",
+      "github": "https://github.com/sangyeop-kim",
+      "cv": "https://drive.google.com/file/d/1S2iZpqSs0iC4TNsEh4WnnW6M-GCqzvqn/view",
+      "scholar": "https://scholar.google.com/citations?user=hxVvuSYAAAAJ&hl=ko"
+    },
+    "sections": [
+      {
+        "title": "Education",
+        "items": [
+          "<span class=\"degree\">Ph.D.</span> Industrial Engineering, Seoul National University, 2025",
+          "<span class=\"degree\">M.S.</span> Industrial Engineering, Seoul National University, 2021",
+          "<span class=\"degree\">B.S.</span> Industrial Engineering, Seoul National University, 2019"
+        ]
+      },
+      {
+        "title": "Experience",
+        "items": [
+          "<span class=\"position\">Assistant Professor</span> Ewha Womans University, 2026–Present",
+          "<span class=\"position\">AI Researcher</span> Kim & Chang, 2025–Present",
+          "<span class=\"position\">AI Lead</span> Coxwave, 2023–2025",
+          "<span class=\"position\">AI Lead</span> RTM, 2020–2023"
+        ]
+      }
+    ]
+  }
+]
