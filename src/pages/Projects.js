@@ -1,7 +1,7 @@
 import { loadData } from '../utils/dataLoader.js';
 
 let cachedProjects = [];
-let currentLang = 'ko'; // Default to Korean
+let currentLang = 'en'; // Default to English
 
 export function mount() {
   window.toggleProjectLang = () => {
@@ -202,8 +202,8 @@ export default async function Projects() {
   return `
     <section class="page-content">
       <div class="page-header">
-        <h1 class="page-title">프로젝트</h1>
-        <button id="project-lang-toggle" class="lang-toggle-btn" onclick="toggleProjectLang()">EN</button>
+        <h1 class="page-title">Projects</h1>
+        <button id="project-lang-toggle" class="lang-toggle-btn" onclick="toggleProjectLang()">KO</button>
       </div>
       
       <!-- Grid View -->
@@ -211,10 +211,10 @@ export default async function Projects() {
         ${cachedProjects.map(project => `
           <div class="project-card-grid" onclick="showProjectDetail(${project.id})">
             <div class="project-grid-image">
-              <img src="${project.image}" alt="${project.title_ko}">
+              <img src="${project.image}" alt="${project.title}">
             </div>
             <div class="project-grid-info">
-              <h3 class="project-grid-title">${project.title_ko}</h3>
+              <h3 class="project-grid-title">${project.title}</h3>
               <p class="project-grid-agency">${project.sponsor}</p>
               <div class="project-tags">
                 ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}

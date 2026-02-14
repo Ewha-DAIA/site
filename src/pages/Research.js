@@ -1,6 +1,6 @@
 import { loadData } from '../utils/dataLoader.js';
 
-let currentLang = 'ko';
+let currentLang = 'en';
 
 export function mount() {
   window.toggleResearchLang = (lang) => {
@@ -39,8 +39,8 @@ export default async function Research() {
           <p class="ra-page-subtitle">Research Areas</p>
         </div>
         <div class="ra-lang-toggle">
-          <button id="research-lang-ko" class="lang-btn active" onclick="toggleResearchLang('ko')">한국어</button>
-          <button id="research-lang-en" class="lang-btn" onclick="toggleResearchLang('en')">English</button>
+          <button id="research-lang-ko" class="lang-btn" onclick="toggleResearchLang('ko')">한국어</button>
+          <button id="research-lang-en" class="lang-btn active" onclick="toggleResearchLang('en')">English</button>
         </div>
       </div>
 
@@ -48,8 +48,8 @@ export default async function Research() {
         ${research.map(item => `
           <div class="ra-card">
             <div class="ra-icon">${item.icon}</div>
-            <h3 class="ra-title">${item.title_ko}</h3>
-            <p class="ra-description">${item.description_ko}</p>
+            <h3 class="ra-title">${item.title}</h3>
+            <p class="ra-description">${item.description}</p>
             <div class="ra-keywords">
               ${item.keywords.map(k => `<span class="ra-keyword">${k}</span>`).join('')}
             </div>
