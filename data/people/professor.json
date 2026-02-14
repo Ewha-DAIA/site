@@ -5,7 +5,7 @@
     "role": "Assistant Professor",
     "department": "Department of Data Science, Ewha Womans University",
     "bio": "Sangyeop Kim received the B.S., M.S., and Ph.D. degrees in Industrial Engineering from Seoul National University, Seoul, Korea, in 2019, 2021, and 2025, respectively. His Ph.D. thesis focused on the integration of Large Language Models and Information Retrieval for semantic search, recommendation, and user analysis. He is currently an Assistant Professor at Ewha Womans University. Before joining academia, he served as an AI Lead at Coxwave (2023–2025), developing conversation analytics solutions, and at RTM (2020–2023), leading the deployment of manufacturing AI systems at Intel's semiconductor fabrication plant. He also worked as an AI Consultant at Kim & Chang. His research interests include Multimodal AI, Data Science for Information Systems, Semantic Search, and Trustworthy AI Systems.",
-    "image": "../assets/people/sangyeop.jpg",
+    "image": "./assets/people/sangyeop.jpg",
     "contact": {
       "office": "Ewha Jinseonmi-gwan 418",
       "tel": "+82-2-3277-4077",

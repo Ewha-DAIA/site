@@ -77,7 +77,7 @@ Lab/
   "name": "이름",
   "role": "Principal Investigator",
   "bio": "소개 내용",
-  "image": "../assets/people/사진.jpg",
+  "image": "./assets/people/사진.jpg",
   "social": {
     "email": "이메일",
     "github": "GitHub URL",

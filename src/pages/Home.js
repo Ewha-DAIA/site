@@ -5,7 +5,7 @@ export async function mount() {
   let images = [];
   
   try {
-    const response = await fetch(resolveUrl('assets/home/'));
+    const response = await fetch(resolveUrl('./assets/home/'));
     const html = await response.text();
     
     const parser = new DOMParser();
