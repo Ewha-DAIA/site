@@ -1,5 +1,17 @@
 [
   {
+    "id": "U3",
+    "title": "Overthinking Loops in Agents: A Structural Risk via MCP Tools",
+    "authors": "Yohan Lee, Seoyeon Choi, Jisoo Jang, **Sangyeop Kim**, Seungtaek Choi†",
+    "venue": "",
+    "year": "Under Review",
+    "link": "",
+    "tags": [
+      "Agent Safety",
+      "MCP"
+    ]
+  },
+  {
     "id": "U2",
     "title": "Beyond Factual Accuracy: A Benchmark for Evaluating Perspective Alignment in LLMs",
     "authors": "Sunghoon Kim, **Sangyeop Kim†**",
