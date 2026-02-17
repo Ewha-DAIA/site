@@ -1,18 +1,43 @@
 import { CONFIG } from '../config.js';
-import { loadData } from '../utils/dataLoader.js';
+
+const IMAGE_EXTENSIONS = ['jpg', 'jpeg', 'png', 'webp', 'gif'];
+
+async function discoverHomeImages() {
+  // Try GitHub API first (works on GitHub Pages)
+  try {
+    const res = await fetch('https://api.github.com/repos/Ewha-DAIA/site/contents/assets/home');
+    if (res.ok) {
+      const files = await res.json();
+      const images = files
+        .filter(f => f.type === 'file' && IMAGE_EXTENSIONS.some(ext => f.name.toLowerCase().endsWith('.' + ext)))
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map(f => `./assets/home/${f.name}`);
+      if (images.length > 0) return images;
+    }
+  } catch (e) {
+    // API unavailable (local dev, rate-limited, etc.)
+  }
+
+  // Fallback: probe background_1 ~ background_20 (skips gaps)
+  const images = [];
+  for (let i = 1; i <= 20; i++) {
+    for (const ext of IMAGE_EXTENSIONS) {
+      try {
+        const path = `./assets/home/background_${i}.${ext}`;
+        const res = await fetch(path, { method: 'HEAD' });
+        if (res.ok) {
+          images.push(path);
+          break;
+        }
+      } catch (e) { /* skip */ }
+    }
+  }
+  return images;
+}
 
 export async function mount() {
-  let images = [];
-  
-  try {
-    const imageList = await loadData('home-images.json');
-    if (imageList && imageList.length > 0) {
-      images = imageList.map(path => `./${path}`);
-    }
-  } catch (error) {
-    console.error('Failed to load images:', error);
-  }
-  
+  let images = await discoverHomeImages();
+
   if (images.length === 0) {
     images = ['./assets/home/background_1.jpg'];
   }
@@ -48,7 +73,7 @@ export async function mount() {
     window.homeSliderInterval = setInterval(() => {
       currentIndex = (currentIndex + 1) % images.length;
       showImage(currentIndex);
-    }, 5000);
+    }, 6500);
   }
   
   showImage(currentIndex);
