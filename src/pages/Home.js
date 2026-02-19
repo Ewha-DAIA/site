@@ -73,7 +73,7 @@ export async function mount() {
     window.homeSliderInterval = setInterval(() => {
       currentIndex = (currentIndex + 1) % images.length;
       showImage(currentIndex);
-    }, 6500);
+    }, 6000);
   }
   
   showImage(currentIndex);
