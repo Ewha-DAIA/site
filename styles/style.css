@@ -228,16 +228,22 @@ ul {
   display: none;
 }
 
-/* Logo Responsive */
+/* Logo & Nav Responsive */
+
+/* Medium screens: hide "@ Ewha", show "DAIA Lab" */
 @media (max-width: 900px) {
   .logo-text {
     font-size: 1.2rem;
   }
+  .logo-text-ewha {
+    display: none;
+  }
 }
 
+/* Small screens: hide all text, show only symbol */
 @media (max-width: 600px) {
   .logo-text {
-    font-size: 1rem;
+    display: none;
   }
   
   .logo-image {
@@ -249,9 +255,34 @@ ul {
   }
 }
 
-@media (max-width: 480px) {
-  .logo-text {
-    display: none; /* Hide text, show only symbol on very small screens */
+/* Nav-links: horizontally scrollable on small screens */
+@media (max-width: 900px) {
+  .navbar {
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    gap: var(--spacing-md);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    padding-bottom: 4px;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  .nav-links li {
+    flex-shrink: 0;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+    white-space: nowrap;
   }
 }
 

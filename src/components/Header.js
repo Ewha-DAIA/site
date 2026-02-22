@@ -1,4 +1,4 @@
-import { CONFIG } from '../config.js';
+
 
 export default function Header() {
   return `
@@ -6,7 +6,7 @@ export default function Header() {
       <div class="logo">
         <a href="#/">
           <img src="./assets/ewha/symbol.png" alt="Ewha Logo" class="logo-image">
-          <span class="logo-text">${CONFIG.LAB_NAME}</span>
+          <span class="logo-text"><span class="logo-text-lab">DAIA Lab</span><span class="logo-text-ewha"> @ Ewha</span></span>
         </a>
       </div>
       <ul class="nav-links">
