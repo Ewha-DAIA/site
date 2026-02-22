@@ -1,4 +1,4 @@
-import Header from './components/Header.js';
+import Header, { mountHeader } from './components/Header.js';
 import Footer from './components/Footer.js';
 
 const routes = {
@@ -52,6 +52,7 @@ async function renderPage() {
 
 async function init() {
   headerContainer.innerHTML = Header();
+  mountHeader();
   footerContainer.innerHTML = Footer();
 
   window.addEventListener('hashchange', renderPage);

@@ -183,6 +183,23 @@ ul {
   position: relative;
 }
 
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.dropdown-arrow {
+  font-size: 0.7em;
+  transition: transform var(--transition-fast);
+  display: inline-block;
+}
+
+.nav-dropdown.open .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -202,7 +219,9 @@ ul {
   z-index: 1000;
 }
 
-.nav-dropdown:hover .dropdown-menu {
+/* Show dropdown on hover (desktop) OR when .open class is toggled (click/touch) */
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown.open .dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -263,7 +282,7 @@ ul {
 
   .nav-links {
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y: visible;
     flex-wrap: nowrap;
     gap: var(--spacing-md);
     -webkit-overflow-scrolling: touch;
@@ -283,6 +302,14 @@ ul {
   .nav-links a {
     font-size: 0.85rem;
     white-space: nowrap;
+  }
+
+  /* Make dropdown menus fixed so they escape overflow container */
+  .nav-dropdown .dropdown-menu {
+    position: fixed;
+    top: 56px; /* Below the header bar */
+    left: auto;
+    z-index: 2000;
   }
 }
 
