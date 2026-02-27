@@ -38,42 +38,106 @@ export default function Header() {
 
 export function mountHeader() {
   const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+  let activePortal = null;
+  let activeDropdown = null;
+
+  function isMobile() {
+    return window.innerWidth <= 900;
+  }
+
+  function removePortal() {
+    if (activePortal) {
+      activePortal.classList.remove('show');
+      setTimeout(() => {
+        if (activePortal && activePortal.parentNode) {
+          activePortal.parentNode.removeChild(activePortal);
+        }
+        activePortal = null;
+      }, 200);
+    }
+  }
 
   function closeAllDropdowns() {
+    // Close desktop inline dropdowns
     document.querySelectorAll('.nav-dropdown.open').forEach(dd => {
       dd.classList.remove('open');
-      // Reset inline left style so it doesn't stick around
-      const menu = dd.querySelector('.dropdown-menu');
-      if (menu) menu.style.left = '';
+    });
+    // Close mobile portal
+    removePortal();
+    activeDropdown = null;
+  }
+
+  function showPortal(toggle, menu) {
+    removePortal();
+
+    // Create portal element with cloned menu items
+    const portal = document.createElement('ul');
+    portal.className = 'dropdown-portal';
+    portal.innerHTML = menu.innerHTML;
+
+    document.body.appendChild(portal);
+    activePortal = portal;
+
+    // Position below the toggle button
+    const rect = toggle.getBoundingClientRect();
+    portal.style.top = (rect.bottom + 4) + 'px';
+
+    // Calculate left position, ensuring it doesn't go off-screen
+    let leftPos = rect.left;
+    const portalWidth = Math.max(portal.offsetWidth, 150);
+    if (leftPos + portalWidth > window.innerWidth - 8) {
+      leftPos = window.innerWidth - portalWidth - 8;
+    }
+    if (leftPos < 8) leftPos = 8;
+    portal.style.left = leftPos + 'px';
+
+    // Trigger animation
+    requestAnimationFrame(() => {
+      portal.classList.add('show');
+    });
+
+    // Handle clicks on portal links
+    portal.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        closeAllDropdowns();
+      });
     });
   }
 
   dropdownToggles.forEach(toggle => {
     toggle.addEventListener('click', (e) => {
       const parentDropdown = toggle.closest('.nav-dropdown');
-      const isOpen = parentDropdown.classList.contains('open');
+      const menu = parentDropdown.querySelector('.dropdown-menu');
+      const isCurrentlyActive = (activeDropdown === parentDropdown);
 
-      // Close all other dropdowns first
-      closeAllDropdowns();
-
-      if (!isOpen) {
-        // Open this dropdown, prevent navigation
+      if (isMobile()) {
+        // Mobile: use portal approach
         e.preventDefault();
         e.stopPropagation();
-        parentDropdown.classList.add('open');
 
-        // Position the fixed dropdown under the toggle on small screens
-        const menu = parentDropdown.querySelector('.dropdown-menu');
-        if (window.innerWidth <= 900 && menu) {
-          const rect = toggle.getBoundingClientRect();
-          menu.style.left = rect.left + 'px';
+        if (isCurrentlyActive) {
+          closeAllDropdowns();
+        } else {
+          closeAllDropdowns();
+          activeDropdown = parentDropdown;
+          parentDropdown.classList.add('open');
+          showPortal(toggle, menu);
+        }
+      } else {
+        // Desktop: use inline dropdown (existing behavior)
+        const isOpen = parentDropdown.classList.contains('open');
+        closeAllDropdowns();
+
+        if (!isOpen) {
+          e.preventDefault();
+          e.stopPropagation();
+          parentDropdown.classList.add('open');
         }
       }
-      // If already open, allow the default link navigation
     });
   });
 
-  // Close dropdowns when clicking a sub-menu item
+  // Close dropdowns when clicking a sub-menu item (desktop inline)
   document.querySelectorAll('.dropdown-menu a').forEach(link => {
     link.addEventListener('click', () => {
       closeAllDropdowns();
@@ -82,7 +146,7 @@ export function mountHeader() {
 
   // Close dropdowns when clicking outside
   document.addEventListener('click', (e) => {
-    if (!e.target.closest('.nav-dropdown')) {
+    if (!e.target.closest('.nav-dropdown') && !e.target.closest('.dropdown-portal')) {
       closeAllDropdowns();
     }
   });

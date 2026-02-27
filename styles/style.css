@@ -304,13 +304,54 @@ ul {
     white-space: nowrap;
   }
 
-  /* Make dropdown menus fixed so they escape overflow container */
+  /* Hide the inline dropdown on mobile - it will be shown via portal */
   .nav-dropdown .dropdown-menu {
-    position: fixed;
-    top: 56px; /* Below the header bar */
-    left: auto;
-    z-index: 2000;
+    display: none !important;
   }
+}
+
+/* Dropdown Portal - rendered outside the header to escape overflow & backdrop-filter containing block */
+.dropdown-portal {
+  position: fixed;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  min-width: 150px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  list-style: none;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.dropdown-portal.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-portal li {
+  list-style: none;
+}
+
+.dropdown-portal a {
+  display: block;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.dropdown-portal a:hover {
+  background: var(--surface-hover);
+  color: var(--accent-color);
 }
 
 /* Footer */
