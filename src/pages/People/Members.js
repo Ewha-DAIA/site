@@ -9,9 +9,9 @@ export default async function Members() {
   const allPeople = [...(students || [])];
 
   // Group students by role
-  const phdStudents = (students || []).filter(p => p.role === 'Ph.D. Student');
-  const mastersStudents = (students || []).filter(p => p.role === 'Master Student');
-  const undergraduates = (students || []).filter(p => p.role === 'Undergraduate Student');
+  const phdStudents = (students || []).filter(p => p.role.includes('Ph.D.') || p.role.includes('PhD'));
+  const mastersStudents = (students || []).filter(p => p.role.includes('Master') || p.role.includes('M.S.') || p.role === 'MS');
+  const undergraduates = (students || []).filter(p => p.role.includes('Undergraduate') || p.role.includes('B.S.') || p.role === 'BS');
 
   // Helper to generate social icons
   const renderSocial = (social) => {
@@ -41,8 +41,21 @@ export default async function Members() {
           </div>
           <div class="modal-info">
             <h2>${person.name}</h2>
-            <p class="modal-role">${person.role}</p>
-            <p class="modal-bio">${person.bio}</p>
+            <p class="modal-role"><strong>${person.role}</strong></p>
+            ${person.degrees && person.degrees.length > 0 ? `
+              <div class="modal-section" style="margin-top: 1rem;">
+                <h3 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--text-primary);">Education</h3>
+                <ul style="list-style-type: disc; margin-left: 1.2rem; margin-bottom: 1rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5;">
+                  ${person.degrees.map(deg => `<li>${deg}</li>`).join('')}
+                </ul>
+              </div>
+            ` : ''}
+            ${person.bio ? `
+              <div class="modal-section" style="margin-top: 1rem; margin-bottom: 1rem;">
+                <h3 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--text-primary);">Research Area</h3>
+                <p class="modal-bio" style="margin-top: 0;">${person.bio}</p>
+              </div>
+            ` : ''}
             ${renderSocial(person.social)}
           </div>
         </div>
@@ -64,7 +77,17 @@ export default async function Members() {
       </div>
       <div class="person-info">
         <h3 class="person-name">${person.name}</h3>
-        <p class="person-role">${person.role}</p>
+        <p class="person-role" style="font-weight: bold;">${person.role}</p>
+        ${person.degrees && person.degrees.length > 0 ? `
+          <ul class="person-degrees" style="list-style-type: disc; margin-left: 1.2rem; margin-top: 0.5rem; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">
+            ${person.degrees.map(deg => `<li>${deg}</li>`).join('')}
+          </ul>
+        ` : ''}
+        ${person.bio ? `
+          <div class="person-research-area" style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; margin-bottom: 0.5rem; line-height: 1.4;">
+            <strong style="color: var(--text-primary);">Research Area:</strong> ${person.bio}
+          </div>
+        ` : ''}
         ${person.social && person.social.email ? `<p class="person-email">${person.social.email}</p>` : ''}
         ${renderSocial(person.social)}
       </div>
