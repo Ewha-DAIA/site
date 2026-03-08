@@ -85,7 +85,7 @@ export default async function Home() {
   try {
     const newsResponse = await fetch('./data/news.json');
     news = await newsResponse.json();
-    news.sort((a, b) => b.date.localeCompare(a.date));
+    news.sort((a, b) => b.id - a.id);
   } catch (error) {
     console.error('Failed to load news:', error);
   }
