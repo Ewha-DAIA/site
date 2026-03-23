@@ -40,7 +40,10 @@ export default async function Members() {
             <img src="${person.image}" alt="${person.name}">
           </div>
           <div class="modal-info">
-            <h2>${person.name}</h2>
+            <h2>${(() => {
+              const m = person.name.match(/^(.+?)\s*\((.+?)\)$/);
+              return m ? `<span style="font-size:1.5rem;font-weight:700">${m[1].trim()}</span> <span style="font-size:1.1rem;font-weight:500;color:var(--text-secondary)">${m[2].trim()}</span>` : person.name;
+            })()}</h2>
             <p class="modal-role"><strong>${person.role}</strong></p>
             ${person.degrees && person.degrees.length > 0 ? `
               <div class="modal-section" style="margin-top: 1rem;">
@@ -69,6 +72,17 @@ export default async function Members() {
     });
   };
 
+  // Helper to render name with Korean/English split
+  const renderName = (name, tag = 'h3') => {
+    const match = name.match(/^(.+?)\s*\((.+?)\)$/);
+    if (match) {
+      const krName = match[1].trim();
+      const enName = match[2].trim();
+      return `<${tag} class="person-name"><span class="person-name-kr">${krName}</span><span class="person-name-en">${enName}</span></${tag}>`;
+    }
+    return `<${tag} class="person-name">${name}</${tag}>`;
+  };
+
   // Render student card (clickable)
   const renderStudentCard = (person) => `
     <div class="person-card clickable" onclick="openMemberModal(${person.id})">
@@ -76,7 +90,7 @@ export default async function Members() {
         <img src="${person.image}" alt="${person.name}">
       </div>
       <div class="person-info">
-        <h3 class="person-name">${person.name}</h3>
+        ${renderName(person.name)}
         <p class="person-role" style="font-weight: bold;">${person.role}</p>
         ${person.degrees && person.degrees.length > 0 ? `
           <ul class="person-degrees" style="list-style-type: disc; margin-left: 1.2rem; margin-top: 0.5rem; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">

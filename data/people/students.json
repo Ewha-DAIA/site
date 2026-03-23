@@ -1,7 +1,7 @@
 [
     {
         "id": 0,
-        "name": "Yoosun Hwang",
+        "name": "황유선 (Yoosun Hwang)",
         "role": "M.S. Student",
         "degrees": [
             "B.S. in Smart Plant Engineering and Statistics, Kyungpook National University (2026.02)"
@@ -10,6 +10,32 @@
         "image": "./assets/people/yoosun.JPG",
         "social": {
             "email": "yoosun@ewha.ac.kr"
+        }
+    },
+    {
+        "id": 1,
+        "name": "남재은 (Jaeeun Nahm)",
+        "role": "Undergraduate Student",
+        "degrees": [
+            "Data Science, Ewha Womans University"
+        ],
+        "bio": "Trustworthy LLM, Explainable AI (XAI)",
+        "image": "./assets/people/jaeeun_nahm.jpeg",
+        "social": {
+            "email": "cheetah_cub0914@ewha.ac.kr"
+        }
+    },
+    {
+        "id": 2,
+        "name": "박세은 (Seeun Park)",
+        "role": "Undergraduate Student",
+        "degrees": [
+            "Data Science, Ewha Womans University"
+        ],
+        "bio": "Time-series Modeling, Multimodal Learning, Explainable AI (XAI)",
+        "image": "./assets/people/seeunpark.jpg",
+        "social": {
+            "email": "seeunpark@ewha.ac.kr"
         }
     }
 ]

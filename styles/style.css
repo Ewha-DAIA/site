@@ -1112,6 +1112,10 @@ details[open] summary::after {
   gap: var(--spacing-xl);
 }
 
+.highlights-container.highlights-full-width {
+  grid-template-columns: 1fr;
+}
+
 .highlight-section {
   background: var(--surface-color);
   padding: var(--spacing-lg);
@@ -1124,6 +1128,7 @@ details[open] summary::after {
   font-size: 1.75rem;
   margin-bottom: var(--spacing-lg);
   color: var(--text-primary);
+  text-align: center;
 }
 
 /* Compact News */
@@ -1336,8 +1341,7 @@ details[open] summary::after {
 /* People Grid */
 .people-grid {
   display: grid;
-  /* Adjusted to fit max 4 items (approx 280px-300px each on large screens) */
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Even smaller min-width */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: var(--spacing-lg);
 }
 
@@ -1410,7 +1414,22 @@ details[open] summary::after {
 }
 
 .person-info {
-  padding: var(--spacing-md); /* Increased padding for more left margin */
+  padding: var(--spacing-md);
+}
+
+.person-name-kr {
+  display: inline;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.person-name-en {
+  display: inline;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-left: 0.4rem;
 }
 
 .person-bio {

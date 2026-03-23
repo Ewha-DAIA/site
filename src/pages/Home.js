@@ -90,23 +90,6 @@ export default async function Home() {
     console.error('Failed to load news:', error);
   }
 
-  let projects = [];
-  try {
-    const response = await fetch('./data/projects.json');
-    projects = await response.json();
-  } catch (error) {
-    console.error('Failed to load projects:', error);
-  }
-
-  const featuredProjects = projects
-    .filter(p => p.featured === true)
-    .sort((a, b) => {
-      const yearA = parseInt(a.period.split(' ')[0]) || 0;
-      const yearB = parseInt(b.period.split(' ')[0]) || 0;
-      return yearB - yearA;
-    })
-    .slice(0, 3);
-
   const formatDate = (dateStr) => {
     const [year, month] = dateStr.split('-');
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -149,7 +132,7 @@ export default async function Home() {
     </section>
 
     <section class="home-highlights">
-      <div class="highlights-container">
+      <div class="highlights-container highlights-full-width">
         <div class="highlight-section news-section-compact">
           <h2 class="section-title-compact">Latest News</h2>
           <div class="news-list-compact">
@@ -158,23 +141,6 @@ export default async function Home() {
                 <span class="news-date-compact">${formatDate(item.date)}</span>
                 <p class="news-content-compact">${item.content}</p>
               </div>
-            `).join('')}
-          </div>
-        </div>
-
-        <div class="highlight-section projects-section-compact">
-          <h2 class="section-title-compact">Featured Projects</h2>
-          <div class="projects-grid-compact">
-            ${featuredProjects.map(project => `
-              <a href="#/projects" class="project-card-compact">
-                <div class="project-card-image-compact">
-                  <img src="${project.image}" alt="${project.title}">
-                </div>
-                <div class="project-card-info-compact">
-                  <h3 class="project-card-title-compact">${project.title}</h3>
-                  <p class="project-card-sponsor-compact">${project.sponsor}</p>
-                </div>
-              </a>
             `).join('')}
           </div>
         </div>

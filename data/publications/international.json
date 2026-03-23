@@ -1,5 +1,17 @@
 [
   {
+    "id": "U4",
+    "title": "Confidence-guided dual-adapter fusion for multimodal aspect-based sentiment analysis",
+    "authors": "Hyunjong Kim, **Sangyeop Kim†**",
+    "venue": "",
+    "year": "Under Review",
+    "link": "",
+    "tags": [
+      "Multimodal",
+      "Sentiment Analysis"
+    ]
+  },
+  {
     "id": "U3",
     "title": "Overthinking Loops in Agents: A Structural Risk via MCP Tools",
     "authors": "Yohan Lee, Seoyeon Choi, Jisoo Jang, **Sangyeop Kim**, Seungtaek Choi†",
