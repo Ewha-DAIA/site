@@ -37,5 +37,31 @@
         "social": {
             "email": "seeunpark@ewha.ac.kr"
         }
+    },
+    {
+        "id": 3,
+        "name": "공지율 (Jiyul Kong)",
+        "role": "Undergraduate Student",
+        "degrees": [
+            "Data Science, Ewha Womans University"
+        ],
+        "bio": "Semantic Search, Large Language Models",
+        "image": "./assets/people/jiyul_kong.jpg",
+        "social": {
+            "email": "jiyul1028@ewha.ac.kr"
+        }
+    },
+    {
+        "id": 4,
+        "name": "김효민 (Hyomin Kim)",
+        "role": "Undergraduate Student",
+        "degrees": [
+            "Data Science, Ewha Womans University"
+        ],
+        "bio": "Agentic AI, Multimodal Large Language Models",
+        "image": "./assets/people/default.png",
+        "social": {
+            "email": "happyjmhm@ewha.ac.kr"
+        }
     }
 ]
