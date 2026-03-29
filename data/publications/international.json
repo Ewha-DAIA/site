@@ -1,6 +1,18 @@
 [
   {
     "id": "U4",
+    "title": "Multi-Domain Learning for Sentencing Factor Extraction in Korean Criminal Judgments",
+    "authors": "Min Choi, **Sangyeop Kim†**",
+    "venue": "",
+    "year": "Under Review",
+    "link": "",
+    "tags": [
+      "Legal AI",
+      "Domain Adaptation"
+    ]
+  }
+  {
+    "id": "U4",
     "title": "Confidence-guided dual-adapter fusion for multimodal aspect-based sentiment analysis",
     "authors": "Hyunjong Kim, **Sangyeop Kim†**",
     "venue": "",
