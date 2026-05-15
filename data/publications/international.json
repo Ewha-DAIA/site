@@ -1,5 +1,17 @@
 [
   {
+    "id": "U6",
+    "title": "Attention Divergence via Process-Step Masked Self-Supervised Learning for Semiconductor Anomaly Detection",
+    "authors": "Yeonmo Kim, **Sangyeop Kim†**",
+    "venue": "",
+    "year": "Under Review",
+    "link": "",
+    "tags": [
+      "Manufacturing",
+      "Anomaly Detection"
+    ]
+  },
+  {
     "id": "U5",
     "title": "Multi-Domain Learning for Sentencing Factor Extraction in Korean Criminal Judgments",
     "authors": "Min Choi, **Sangyeop Kim†**",
