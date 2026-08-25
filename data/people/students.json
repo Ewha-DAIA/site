@@ -63,5 +63,27 @@
         "social": {
             "email": "happyjmhm@ewha.ac.kr"
         }
+    },
+    {
+        "id": 5,
+        "name": "김민영 (Minyoung Kim)",
+        "role": "Undergraduate Student",
+        "degrees": [],
+        "bio": "LLM Agents, Medical/Bio AI",
+        "image": "./assets/people/Minyoung_Kim.jpg",
+        "social": {
+            "email": "kmyvella@ewha.ac.kr"
+        }
+    },
+    {
+        "id": 6,
+        "name": "신우림 (Woorim Shin)",
+        "role": "Undergraduate Student",
+        "degrees": [],
+        "bio": "LLM Agents, Agent Memory, Systems for AI/Efficient AI Systems",
+        "image": "./assets/people/Woorim_Shin.jpg",
+        "social": {
+            "email": "wrim0923@gmail.com"
+        }
     }
 ]

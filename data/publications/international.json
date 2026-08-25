@@ -1,5 +1,17 @@
 [
   {
+    "id": "U7",
+    "title": "SAGE-VP: Structure-Aware Agentic View Planning for Single-View 3D Reconstruction",
+    "authors": "**Kaeun Han**, **Minji Kim**, **Sangyeop Kim†**",
+    "venue": "",
+    "year": "Under Review",
+    "link": "",
+    "tags": [
+      "3D Reconstruction",
+      "Agentic AI"
+    ]
+  },
+  {
     "id": "U6",
     "title": "Attention Divergence via Process-Step Masked Self-Supervised Learning for Semiconductor Anomaly Detection",
     "authors": "Yeonmo Kim, **Sangyeop Kim†**",

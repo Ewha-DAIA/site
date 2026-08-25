@@ -5,5 +5,12 @@
         "image": "./assets/gallery/IMG_5039.jpg",
         "year": "2026",
         "semester": "Spring"
+    },
+    {
+        "id": 2,
+        "title": "대동제",
+        "image": "./assets/gallery/26-1_daedong.jpg",
+        "year": "2026",
+        "semester": "Spring"
     }
 ]
