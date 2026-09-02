@@ -1,6 +1,20 @@
 [
     {
         "id": 0,
+        "name": "Azra Zulaikha Binti Zainol",
+        "role": "Ph.D. Student",
+        "degrees": [
+            "B.A. in English Language and Linguistics, Department of English, Universiti Putra Malaysia (2023.04)",
+            "M.S. in Data Science and Analytics, Department of Mathematical Sciences, Universiti Kebangsaan Malaysia (2025.03)"
+        ],
+        "bio": "Low Resource Language LLM, Retrieval-Augmented Generation (RAG)",
+        "image": "./assets/people/Azra.jpg",
+        "social": {
+            "email": "azra@ewha.ac.kr"
+        }
+    },
+    {
+        "id": 1,
         "name": "황유선 (Yoosun Hwang)",
         "role": "M.S. Student",
         "degrees": [
@@ -13,7 +27,7 @@
         }
     },
     {
-        "id": 1,
+        "id": 2,
         "name": "남재은 (Jaeeun Nahm)",
         "role": "Undergraduate Student",
         "degrees": [
@@ -26,7 +40,7 @@
         }
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "박세은 (Seeun Park)",
         "role": "Undergraduate Student",
         "degrees": [
@@ -39,7 +53,7 @@
         }
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "공지율 (Jiyul Kong)",
         "role": "Undergraduate Student",
         "degrees": [
@@ -52,7 +66,7 @@
         }
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "김효민 (Hyomin Kim)",
         "role": "Undergraduate Student",
         "degrees": [
@@ -65,10 +79,12 @@
         }
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "김민영 (Minyoung Kim)",
         "role": "Undergraduate Student",
-        "degrees": [],
+        "degrees": [
+            "Data Science, Ewha Womans University"
+        ],
         "bio": "LLM Agents, Medical/Bio AI",
         "image": "./assets/people/Minyoung_Kim.jpg",
         "social": {
@@ -76,14 +92,29 @@
         }
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "신우림 (Woorim Shin)",
         "role": "Undergraduate Student",
-        "degrees": [],
+        "degrees": [
+            "Computer Science and Engineering, Ewha Womans University"
+        ],
         "bio": "LLM Agents, Agent Memory, Systems for AI/Efficient AI Systems",
         "image": "./assets/people/Woorim_Shin.jpg",
         "social": {
             "email": "wrim0923@gmail.com"
+        }
+    },
+    {
+        "id": 8,
+        "name": "정은지 (Eunji Jeong)",
+        "role": "Undergraduate Student",
+        "degrees": [
+            "Statistics, Hankuk University of Foreign Studies"
+        ],
+        "bio": "Financial AI, Time-series Modeling",
+        "image": "./assets/people/eunji.jpg",
+        "social": {
+            "email": "gioconda30726@gmail.com"
         }
     }
 ]
