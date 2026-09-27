@@ -6,7 +6,7 @@ export async function loadData(filename) {
   }
 
   try {
-    const response = await fetch(`./data/${filename}`);
+    const response = await fetch(`./data/${filename}`, { cache: "no-cache" });
     if (!response.ok) {
       throw new Error(`Failed to load data: ${filename}`);
     }

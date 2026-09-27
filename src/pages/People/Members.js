@@ -127,8 +127,7 @@ export default async function Members() {
       
       <div class="people-sections">
         <!-- Students Sections -->
-        ${renderStudentSection('Ph.D. Students', phdStudents)}
-        ${renderStudentSection('Master Students', mastersStudents)}
+        ${renderStudentSection('Graduate Students', [...phdStudents, ...mastersStudents])}
         ${renderStudentSection('Undergraduate Students', undergraduates)}
       </div>
     </section>

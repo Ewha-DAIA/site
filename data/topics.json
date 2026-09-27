@@ -1,0 +1,159 @@
+{
+  "ongoing": [
+    {
+      "track": "core",
+      "title": "Failure Attribution",
+      "title_ko": "실패 원인 추적 (Failure Attribution)",
+      "description": "멀티 에이전트 시스템이 실패했을 때, 어느 에이전트가 어느 단계에서 결정적인 오류를 만들었는지 찾아냅니다.",
+      "links": [
+        {
+          "label": "관련 연구: Who&When (ICML 2025)",
+          "url": "https://arxiv.org/abs/2505.00212"
+        }
+      ]
+    },
+    {
+      "track": "core",
+      "title_ko": "온라인 감사 (Online Auditing)",
+      "description": "에이전트가 작업을 수행하는 도중에 이상 행동을 실시간으로 탐지하고, 문제가 커지기 전에 개입하는 가드레일을 연구합니다.",
+      "links": [
+        {
+          "label": "관련 연구: AgentForesight",
+          "url": "https://arxiv.org/abs/2605.08715"
+        }
+      ]
+    },
+    {
+      "track": "core",
+      "title_ko": "에이전트 온라인 메모리",
+      "description": "에이전트가 사용자와 상호작용하면서 기억을 실시간으로 쌓고 갱신하며 활용하는 방법을 연구합니다.",
+      "links": [
+        {
+          "label": "관련 논문: PREMem (Findings of EMNLP 2025)",
+          "url": "https://aclanthology.org/2025.findings-emnlp.1204/"
+        }
+      ]
+    },
+    {
+      "track": "core",
+      "title_ko": "에이전트 기반 단일 이미지 3D 복원",
+      "description": "이미지 한 장으로 3D 형상을 복원할 때, 보이지 않는 뒷면이나 가려진 부분을 어느 시점에서 추가로 봐야 할지 에이전트가 판단합니다. 인지·계획·비평 역할을 나눈 멀티 에이전트와 비전-언어 모델로 시점을 계획해 복원 품질을 높입니다.",
+      "links": [
+        {
+          "label": "관련 논문: SAGE-VP (심사 중)",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "track": "applied",
+      "domain": "제조",
+      "title_ko": "공정 도메인 지식을 반영한 반도체 이상 탐지",
+      "description": "반도체 공정 단계의 구조를 모델에 반영해 설비 이상을 탐지하고, 어떤 센서와 단계에서 문제가 생겼는지 설명합니다.",
+      "links": [
+        {
+          "label": "관련 논문: Attention Divergence for Semiconductor Anomaly Detection (심사 중)",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "track": "applied",
+      "domain": "법률",
+      "title_ko": "적은 라벨로 판결문 양형 인자 추출",
+      "description": "형사 판결문에서 양형 인자를 추출하는 소형 언어 모델을 연구합니다. 여러 범죄 유형의 데이터를 어떻게 섞어 학습해야 효과적인지 분석하고, 라벨 없이 계산할 수 있는 말뭉치 통계로 학습 데이터를 고르는 방법을 제안합니다.",
+      "links": [
+        {
+          "label": "관련 논문: Multi-Domain Learning for Sentencing Factor Extraction (심사 중)",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "track": "applied",
+      "domain": "법률",
+      "title_ko": "LLM 양형 추천의 일관성 검증",
+      "description": "같은 사실관계에 대해 LLM이 다른 형량을 추천하지 않는지 검증합니다. 반복 생성, 모델, 문장 표현, 사실 순서를 바꿨을 때 추천이 얼마나 흔들리는지 실제 판결문으로 측정하고, 양형 기준을 함께 제공했을 때의 영향도 분석합니다.",
+      "links": [
+        {
+          "label": "관련 논문: Same Facts, Different Sentences",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "recruiting": [
+    {
+      "domain": "제조",
+      "description": "작은 모델이 먼저 1차 검사를 하고, 판단이 불확실한 경우에만 큰 비전-언어 모델이 2차로 검사하는 에이전트 시스템을 만듭니다. 비용은 줄이면서 놓치는 불량 없이 정확하게 검사하는 것이 목표입니다.",
+      "links": [
+        {
+          "label": "관련 연구 1",
+          "url": "https://arxiv.org/pdf/2308.15366"
+        },
+        {
+          "label": "관련 연구 2",
+          "url": "https://arxiv.org/pdf/2412.04867"
+        },
+        {
+          "label": "관련 연구 3",
+          "url": "https://arxiv.org/pdf/2601.06204"
+        }
+      ],
+      "track": "applied",
+      "title_ko": "불확실성 기반 VLM 에이전트 비전 검사"
+    },
+    {
+      "domain": "교육",
+      "description": "실제 시험 데이터를 바탕으로 말하기와 쓰기 답안을 평가하는 모델을 만듭니다.",
+      "links": [
+        {
+          "label": "관련 연구 1",
+          "url": "https://arxiv.org/pdf/2606.09470"
+        },
+        {
+          "label": "관련 연구 2",
+          "url": "https://arxiv.org/pdf/2607.19219"
+        }
+      ],
+      "track": "applied",
+      "title_ko": "AI 기반 답안 자동 채점"
+    },
+    {
+      "domain": "무역",
+      "description": "상품 설명을 이해해 국제 품목 분류 체계인 HS Code를 자동으로 찾아 줍니다.",
+      "links": [
+        {
+          "label": "관련 연구",
+          "url": "https://aclanthology.org/2026.acl-long.937.pdf"
+        }
+      ],
+      "track": "applied",
+      "title_ko": "HS Code 자동 분류"
+    },
+    {
+      "domain": "금융",
+      "description": "소셜 데이터 같은 비정형 데이터가 시장에 어떤 영향을 주는지 측정하고, 이를 예측에 활용합니다.",
+      "links": [
+        {
+          "label": "관련 자료 (GitHub)",
+          "url": "https://github.com/Ewha-DAIA/Finance"
+        }
+      ],
+      "track": "applied",
+      "title_ko": "대체 데이터 기반 시장 영향 분석"
+    },
+    {
+      "domain": "프라이버시",
+      "description": "텍스트 속 개인정보를 찾아내고 안전하게 다루는 방법을 연구합니다.",
+      "links": [
+        {
+          "label": "관련 연구",
+          "url": "https://arxiv.org/pdf/2502.18545"
+        }
+      ],
+      "track": "applied",
+      "title_ko": "개인정보 탐지와 보호"
+    }
+  ]
+}

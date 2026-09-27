@@ -1,68 +1,649 @@
-[
-    {
-        "id": 1,
-        "icon": "🤖",
-        "title": "Multi-Agent Systems",
-        "title_ko": "멀티 에이전트 시스템",
-        "description": "We design systems where multiple AI agents collaborate to solve complex tasks—decomposing problems, sharing context, and reaching consensus through autonomous planning and coordination.",
-        "description_ko": "여러 AI 에이전트가 협업하여 복잡한 문제를 해결하는 시스템을 설계합니다. 문제를 분해하고, 맥락을 공유하며, 자율적 계획과 조율을 통해 합의에 도달하는 에이전트 오케스트레이션 기술을 연구합니다. 에이전트가 API를 호출하고, 데이터베이스를 질의하며, 소프트웨어를 조작하여 정보를 행동으로 전환하는 도구 증강 지능을 구현합니다.",
-        "keywords": [
-            "Multi-Agent Orchestration",
-            "Autonomous Planning",
-            "Tool-Augmented Intelligence"
+{
+  "intro": {
+    "headline_ko": "Data & AI Applications Lab",
+    "headline": "Data & AI Applications Lab",
+    "body_ko": "DAIA Lab은 AI와 데이터 사이언스의 핵심 기술을 직접 연구하고, 그 결과를 산업 현장의 문제 해결에 활용합니다. 기술 연구와 현장의 문제를 함께 다루며, 두 가지가 서로에게 새로운 방향을 주는 연구를 지향합니다.",
+    "body": "DAIA Lab researches the core technology of AI and data science and puts it to work on real problems in industry. We work on both at once, so that each gives the other new direction.",
+    "eyebrow_ko": "이화여자대학교 데이터사이언스학과",
+    "eyebrow": "Department of Data Science, Ewha Womans University",
+    "pipeline_ko": [
+      "코어 AI",
+      "응용 연구",
+      "현장의 가치"
+    ],
+    "pipeline": [
+      "Core AI",
+      "Applied research",
+      "Value in the field"
+    ]
+  },
+  "approach": {
+    "title_ko": "연구하는 방식",
+    "title": "How We Work",
+    "subtitle_ko": "기술 자체를 깊이 이해하는 것에서 출발해, 연구가 현장의 결정과 가치로 이어지도록 합니다.",
+    "subtitle": "We start from a deep understanding of the technology and make sure the work leads to real decisions and value.",
+    "conditions": [
+      {
+        "title_ko": "기술의 가능성과 한계를 먼저 연구합니다",
+        "title": "We study what the technology can and cannot do",
+        "text_ko": "새로운 모델과 방법이 나오면 직접 실험하고 분석합니다. 기술을 정확히 알아야 문제를 올바르게 고르고 풀 수 있습니다.",
+        "text": "When new models and methods appear, we test and analyze them ourselves. Knowing the technology well is how we choose and solve the right problems."
+      },
+      {
+        "title_ko": "필요한 문제를 연구합니다",
+        "title": "We study problems that matter",
+        "text_ko": "현장에서 실제로 필요로 하는 문제에서 출발합니다. 연구 결과가 산업에 적용되어 가치를 만드는 것을 목표로 합니다.",
+        "text": "We start from problems the field actually needs solved, aiming for results that are applied in industry and create value."
+      },
+      {
+        "title_ko": "현실의 제약 안에서 문제를 정의합니다",
+        "title": "We define problems within real constraints",
+        "text_ko": "시간, 예산, 데이터, 인력처럼 실제로 주어진 조건을 먼저 확인하고, 그 안에서 풀 수 있는 형태로 문제를 정의합니다.",
+        "text": "We first check the conditions that actually exist, such as time, budget, data, and people, and define the problem so it can be solved within them."
+      },
+      {
+        "title_ko": "결과가 의사결정으로 이어지게 만듭니다",
+        "title": "We connect results to decisions",
+        "text_ko": "분석 결과가 누가, 언제, 어떤 결정을 내리는 데 쓰일지 설계합니다. 성과는 연구를 시작하기 전에 합의한 지표로 확인합니다.",
+        "text": "We design how results will be used, including who decides what and when, and measure success with indicators agreed on before the work begins."
+      }
+    ]
+  },
+  "map_title_ko": "연구 구조",
+  "map_title": "Research Structure",
+  "columns_ko": [
+    "문제 정의",
+    "코어 AI",
+    "응용 연구"
+  ],
+  "columns": [
+    "Problem Definition",
+    "Core AI",
+    "Applied Research"
+  ],
+  "center": {
+    "label_ko": [
+      "문제",
+      "해결"
+    ],
+    "label": [
+      "Problem",
+      "Solving"
+    ],
+    "title_ko": "문제 해결",
+    "title": "Problem Solving",
+    "description_ko": "모든 연구는 현장의 문제에서 시작합니다. 문제를 정의하고, 데이터를 이해하고, 현실의 제약 안에서 알맞은 데이터 사이언스 방법을 조합해 의사결정과 가치로 연결합니다.",
+    "description": "Every project starts from a real problem: define who decides what, understand the data, and combine the right techniques under real constraints to create value."
+  },
+  "safety": {
+    "title_ko": "신뢰성 (안전성 · 해석력)",
+    "title": "Trust (Safety & Interpretability)",
+    "ring_label_ko": "신뢰성 · 안전성과 해석력 · 모든 기술과 분야에 공통으로 적용",
+    "ring_label": "Trust · safety & interpretability · across every technique and domain",
+    "description_ko": "AI를 현장에서 쓰려면 믿을 수 있어야 합니다. 에이전트가 어디서 실패하는지 추적하고, 공격과 위험을 분석하며, 모델이 왜 그렇게 판단했는지 설명할 수 있도록 연구합니다.",
+    "description": "AI in the field must be trustworthy. We trace where agents fail, analyze attacks and risks, and make model decisions explainable.",
+    "papers": [
+      "A1",
+      "W1",
+      "C5",
+      "C9",
+      "U4",
+      "C3",
+      "C4"
+    ],
+    "partners": [
+      "콕스웨이브",
+      "서울대학교",
+      "KAIST",
+      "CAPRA"
+    ]
+  },
+  "trust": {
+    "title_ko": "신뢰할 수 있는 AI",
+    "title": "Trustworthy AI",
+    "subtitle_ko": "안전성과 해석력은 따로 떨어진 주제가 아니라 모든 연구에 함께 적용하는 기준입니다.",
+    "subtitle": "Safety and interpretability are not a separate topic but a standard we apply across all our research.",
+    "pillars": [
+      {
+        "title_ko": "안전성",
+        "title": "Safety",
+        "text_ko": "에이전트와 LLM이 어떤 상황에서 위험해지는지 분석하고, 실패를 조기에 찾아 막는 방법을 연구합니다.",
+        "text": "Analyzing when agents and LLMs become risky, and detecting and preventing failures early.",
+        "papers": [
+          "A1",
+          "C5",
+          "W1"
+        ],
+        "projects_ko": [
+          "Agentic AI 운용 신뢰성 확보를 위한 안전화 기술 연구 (콕스웨이브)",
+          "에이전틱 AI 실패 원인 추적 및 실시간 이상 탐지 가드레일 연구 (G-LAMP)"
+        ],
+        "projects": [
+          "Safety techniques for trustworthy agentic AI operation (Coxwave)",
+          "Failure attribution and real-time guardrails for agentic AI (G-LAMP)"
         ]
+      },
+      {
+        "title_ko": "정렬 · 평가",
+        "title": "Alignment & Evaluation",
+        "text_ko": "모델이 사용자의 의도와 관점을 제대로 따르는지, 결과를 어떤 기준으로 믿을 수 있는지 측정합니다.",
+        "text": "Measuring whether models follow user intent and perspective, and what makes results trustworthy.",
+        "papers": [
+          "C9",
+          "C4"
+        ],
+        "projects_ko": [
+          "「지시이행」 능력 평가 벤치마크 구축"
+        ],
+        "projects": [
+          "Instruction-following evaluation benchmark"
+        ]
+      },
+      {
+        "title_ko": "해석력",
+        "title": "Interpretability",
+        "text_ko": "왜 그런 판단을 했는지 사람이 이해할 수 있는 형태로 설명합니다. 현장 전문가가 결과를 믿고 쓰기 위한 조건입니다.",
+        "text": "Explaining why a model decided what it did, in terms people understand, so domain experts can trust and use it.",
+        "papers": [
+          "U4",
+          "C3"
+        ],
+        "projects_ko": [
+          "반도체 제조 공정 도메인 지식을 통합한 해석 가능 AI 이상탐지 (이화여대)"
+        ],
+        "projects": [
+          "Interpretable anomaly detection for semiconductor manufacturing (Ewha)"
+        ]
+      }
+    ]
+  },
+  "techniques": [
+    {
+      "id": "agentic",
+      "group": "analytics",
+      "label_ko": [
+        "에이전틱",
+        "AI"
+      ],
+      "label": [
+        "Agentic",
+        "AI"
+      ],
+      "title_ko": "에이전틱 AI",
+      "title": "Agentic AI",
+      "description_ko": "스스로 계획하고 도구를 사용해 일을 수행하는 에이전트를 설계합니다. 여러 에이전트가 협업하는 구조로 복잡한 분석과 의사결정을 자동화합니다.",
+      "description": "Designing agents that plan and use tools, and multi-agent collaboration that automates complex analysis and decisions.",
+      "papers": [
+        "A1",
+        "U5",
+        "J3"
+      ],
+      "domains": [
+        "service",
+        "strategy",
+        "manufacturing",
+        "trade",
+        "legal"
+      ]
     },
     {
-        "id": 2,
-        "icon": "🔍",
-        "title": "Information Retrieval",
-        "title_ko": "정보 검색",
-        "description": "We build neural search systems that go beyond keyword matching—agents navigate and connect information across heterogeneous sources using dense retrieval and retrieval-augmented generation (RAG).",
-        "description_ko": "단순 키워드 매칭을 넘어, 이기종 소스에서 정보를 탐색하고 연결하는 신경망 검색 시스템을 구축합니다. 밀집 검색(Dense Retrieval)과 검색 증강 생성(RAG)을 결합하여, 사람이 직접 데이터를 훑는 대신 AI가 인사이트를 추출하고 종합하는 데이터 분석의 새로운 패러다임을 만듭니다.",
-        "keywords": [
-            "Dense Retrieval",
-            "Retrieval-Augmented Generation",
-            "Semantic Search"
-        ]
+      "id": "ir",
+      "group": "analytics",
+      "label_ko": [
+        "정보 검색",
+        "추천"
+      ],
+      "label": [
+        "Retrieval",
+        "& RecSys"
+      ],
+      "title_ko": "정보 검색 · 추천",
+      "title": "Retrieval & Recommendation",
+      "description_ko": "필요한 정보를 빠르고 정확하게 찾아 연결합니다. 대화 데이터 검색, 질의 확장, 대화형 추천을 연구합니다.",
+      "description": "Finding and connecting the right information: conversational data retrieval, query expansion, and conversational recommendation.",
+      "papers": [
+        "C2",
+        "C8",
+        "C6",
+        "J1",
+        "J2",
+        "C7"
+      ],
+      "domains": [
+        "service",
+        "commerce",
+        "strategy",
+        "trade",
+        "legal"
+      ]
     },
     {
-        "id": 3,
-        "icon": "🧠",
-        "title": "Large Language Models",
-        "title_ko": "거대 언어 모델",
-        "description": "Starting from natural language understanding, we expand into multimodal intelligence—integrating vision, text, and structured data to build models that reason across modalities and generate meaning.",
-        "description_ko": "자연어 이해에서 출발하여 멀티모달 지능으로 확장합니다. 텍스트, 비전, 구조화된 데이터를 통합하여 모달리티를 넘나들며 추론하고 의미를 생성하는 모델을 연구합니다. LLM의 학습, 추론, 생성 전 과정에서 성능과 효율성을 높이는 방법론을 탐구합니다.",
-        "keywords": [
-            "Large Language Models",
-            "Multimodal AI",
-            "Reasoning & Generation"
-        ]
+      "id": "nlp",
+      "group": "analytics",
+      "label_ko": [
+        "자연어 처리",
+        "LLM"
+      ],
+      "label": [
+        "NLP",
+        "& LLMs"
+      ],
+      "title_ko": "자연어 처리 · LLM",
+      "title": "NLP & LLMs",
+      "description_ko": "문서와 대화 속 텍스트를 이해하고 생성합니다. 판결문 분석, 사용자 만족도 예측, LLM 평가와 정렬을 연구합니다.",
+      "description": "Understanding and generating text: legal judgments, user satisfaction, and LLM evaluation and alignment.",
+      "papers": [
+        "U3",
+        "C3",
+        "C9",
+        "C4"
+      ],
+      "domains": [
+        "legal",
+        "service",
+        "finance",
+        "lifescience",
+        "trade",
+        "strategy"
+      ]
     },
     {
-        "id": 4,
-        "icon": "🏭",
-        "title": "Domain-Specific Industrial AI",
-        "title_ko": "도메인 특화 산업 AI",
-        "description": "We work directly with domain experts in manufacturing, finance, law, and healthcare to build AI tailored to each field's data and constraints—not off-the-shelf, but purpose-built.",
-        "description_ko": "제조, 금융, 법률, 의료 분야의 현장 전문가들과 직접 협업합니다. 범용 모델이 아닌, 각 도메인 고유의 데이터 특성과 운영 제약에 맞춘 맞춤형 AI 솔루션을 구축합니다. 이상 탐지, 가상 계측, 법률 문서 분석 등 실제 현장에서 가치를 만드는 연구를 수행합니다.",
-        "keywords": [
-            "Manufacturing AI",
-            "Legal AI",
-            "Anomaly Detection",
-            "Domain Adaptation"
-        ]
+      "id": "mm",
+      "group": "analytics",
+      "label_ko": [
+        "멀티모달"
+      ],
+      "label": [
+        "Multimodal"
+      ],
+      "title_ko": "멀티모달",
+      "title": "Multimodal",
+      "description_ko": "이미지, 음성, 텍스트를 함께 이해합니다. 이미지 검색, 캡션 평가, 3D 복원, 비전 검사로 넓혀가고 있습니다.",
+      "description": "Understanding images, speech, and text together: image retrieval, caption evaluation, 3D reconstruction, and visual inspection.",
+      "papers": [
+        "J2",
+        "C4",
+        "U5",
+        "U2"
+      ],
+      "domains": [
+        "service",
+        "commerce",
+        "manufacturing"
+      ]
     },
     {
-        "id": 5,
-        "icon": "🛡️",
-        "title": "Trustworthy & Safe AI",
-        "title_ko": "신뢰할 수 있는 AI",
-        "description": "We address the core question: 'Why should we trust this AI?' Through safety guardrails, explainability, and red teaming, we ensure AI systems are reliable—applied across our agent, retrieval, and industrial research.",
-        "description_ko": "'왜 이 AI를 믿어야 하는가'라는 핵심 질문에 답합니다. 안전성 가드레일, 설명 가능성, 레드티밍을 통해 AI 시스템의 신뢰성을 보장합니다. 이를 독립된 주제가 아닌, 에이전트·정보 검색·산업 AI 등 모든 연구 분야에 적용하여 실전에서 신뢰할 수 있는 AI를 만듭니다.",
-        "keywords": [
-            "AI Safety & Guardrails",
-            "Explainable AI (XAI)",
-            "Red Teaming"
-        ]
+      "id": "opt",
+      "group": "analytics",
+      "label_ko": [
+        "최적화",
+        "강화학습"
+      ],
+      "label": [
+        "Optimization",
+        "& RL"
+      ],
+      "title_ko": "최적화 · 강화학습",
+      "title": "Optimization & RL",
+      "description_ko": "분석 결과를 의사결정으로 연결합니다. 제약 조건 아래에서 가장 좋은 선택을 찾고, 대화 전략 같은 정책을 학습합니다.",
+      "description": "Turning analysis into decisions: finding the best choice under constraints and learning policies such as dialogue strategies.",
+      "papers": [
+        "J1"
+      ],
+      "domains": [
+        "commerce",
+        "manufacturing",
+        "finance"
+      ]
+    },
+    {
+      "id": "ts",
+      "group": "analytics",
+      "label_ko": [
+        "시계열",
+        "분석"
+      ],
+      "label": [
+        "Time Series",
+        "Analysis"
+      ],
+      "title_ko": "시계열 분석",
+      "title": "Time Series Analysis",
+      "description_ko": "설비 센서, 공정, 시장 데이터처럼 시간에 따라 변하는 데이터를 분석합니다. 이상 탐지와 예측을 연구합니다.",
+      "description": "Analyzing data that changes over time, such as equipment sensors, processes, and markets, for anomaly detection and forecasting.",
+      "papers": [
+        "U4",
+        "C1"
+      ],
+      "domains": [
+        "manufacturing",
+        "finance",
+        "lifescience"
+      ]
     }
-]
+  ],
+  "domains": [
+    {
+      "id": "service",
+      "label_ko": [
+        "AI 서비스"
+      ],
+      "label": [
+        "AI",
+        "Services"
+      ],
+      "title_ko": "AI 서비스 · 대화 분석",
+      "title": "AI Services & Conversation Analytics",
+      "description_ko": "AI 서비스에서 쌓이는 대화와 답안 데이터를 분석합니다. 사용자를 이해하고 대화 품질과 만족도를 측정하며, 말하기·쓰기 답안을 평가하는 AI도 연구합니다.",
+      "description": "Analyzing conversation and answer data from AI services: understanding users, measuring conversation quality and satisfaction, and assessing speaking and writing.",
+      "partners": [
+        "콕스웨이브",
+        "KAIST",
+        "숭실대학교",
+        "테스트글라이더"
+      ],
+      "papers": [
+        "C2",
+        "C3",
+        "C8",
+        "C7"
+      ]
+    },
+    {
+      "id": "legal",
+      "label_ko": [
+        "법률"
+      ],
+      "label": [
+        "Legal"
+      ],
+      "title_ko": "법률",
+      "title": "Legal",
+      "description_ko": "판결문과 법률 문서를 분석하고 Legal AI 기술을 연구합니다.",
+      "description": "Analyzing judgments and legal documents, and researching Legal AI.",
+      "partners": [
+        "김·장 법률사무소",
+        "서울대학교"
+      ],
+      "papers": [
+        "U3"
+      ]
+    },
+    {
+      "id": "manufacturing",
+      "label_ko": [
+        "제조"
+      ],
+      "label": [
+        "Manufacturing"
+      ],
+      "title_ko": "제조",
+      "title": "Manufacturing",
+      "description_ko": "반도체와 설비 데이터를 분석해 이상 탐지와 공정 진단을 합니다.",
+      "description": "Anomaly detection and process diagnosis on semiconductor and equipment data.",
+      "partners": [
+        "알티엠",
+        "서울대학교"
+      ],
+      "papers": [
+        "U4",
+        "C1"
+      ]
+    },
+    {
+      "id": "strategy",
+      "label_ko": [
+        "경영",
+        "전략"
+      ],
+      "label": [
+        "Business",
+        "Strategy"
+      ],
+      "title_ko": "경영 · 전략",
+      "title": "Business Strategy",
+      "description_ko": "여러 AI 에이전트와 사람이 함께 전략을 세우는 방법을 연구합니다.",
+      "description": "Humans and AI agents planning strategy together.",
+      "partners": [
+        "서울대학교"
+      ],
+      "papers": [
+        "J3"
+      ]
+    },
+    {
+      "id": "commerce",
+      "label_ko": [
+        "추천",
+        "커머스"
+      ],
+      "label": [
+        "Commerce"
+      ],
+      "title_ko": "추천 · 커머스",
+      "title": "Recommendation & Commerce",
+      "description_ko": "사용자 행동과 상품 데이터를 바탕으로 추천과 검색을 연구합니다.",
+      "description": "Recommendation and search from user behavior and product data.",
+      "partners": [
+        "위드마인드",
+        "콕스웨이브"
+      ],
+      "papers": [
+        "J1",
+        "J2"
+      ]
+    },
+    {
+      "id": "lifescience",
+      "label_ko": [
+        "생명과학"
+      ],
+      "label": [
+        "Life",
+        "Science"
+      ],
+      "title_ko": "생명과학",
+      "title": "Life Science",
+      "description_ko": "생명과학 데이터를 분석하는 연구를 진행하고 있습니다.",
+      "description": "Research on analyzing life science data.",
+      "partners": [
+        "이화여자대학교"
+      ],
+      "papers": [],
+      "status": "in_progress"
+    },
+    {
+      "id": "finance",
+      "label_ko": [
+        "금융"
+      ],
+      "label": [
+        "Finance"
+      ],
+      "title_ko": "금융",
+      "title": "Finance",
+      "description_ko": "비정형 데이터가 시장에 미치는 영향을 분석하는 연구를 진행하고 있습니다.",
+      "description": "Research on how unstructured data affects markets.",
+      "partners": [
+        "카카오뱅크",
+        "이화여자대학교"
+      ],
+      "papers": [],
+      "status": "in_progress"
+    },
+    {
+      "id": "trade",
+      "label_ko": [
+        "무역"
+      ],
+      "label": [
+        "Trade"
+      ],
+      "title_ko": "무역",
+      "title": "Trade",
+      "description_ko": "무역 데이터를 이해하고 분류하는 AI를 연구하고 있습니다.",
+      "description": "AI that understands and classifies trade data.",
+      "partners": [
+        "KOTRA",
+        "페더레이션"
+      ],
+      "papers": [],
+      "status": "in_progress"
+    }
+  ],
+  "partner_logos": {
+    "콕스웨이브": "./assets/projects/coxwave.png",
+    "김·장 법률사무소": "./assets/projects/kimchang.png",
+    "서울대학교": "./assets/projects/snu.png",
+    "KAIST": "./assets/projects/KAIST.png",
+    "숭실대학교": "./assets/projects/soongsil.png",
+    "위드마인드": "./assets/projects/withmind.png",
+    "KOTRA": "./assets/projects/KOTRA_Logo.png",
+    "페더레이션": "./assets/projects/federation.png",
+    "알티엠": "./assets/projects/rtm.png",
+    "테스트글라이더": "./assets/projects/testglider.png",
+    "카카오뱅크": "./assets/projects/kakaobank.svg",
+    "삼성전자": "./assets/projects/samsung_electronics.png",
+    "이화여자대학교": "./assets/projects/ewha.png",
+    "CAPRA": "./assets/projects/capra.avif"
+  },
+  "domains_title_ko": "분야별 연구와 협력 기관",
+  "domains_title": "Domains, Publications & Partners",
+  "axes": {
+    "title_ko": "두 축의 연구",
+    "title": "Two Axes of Research",
+    "subtitle_ko": "코어 AI와 응용 연구는 따로 떨어져 있지 않고 서로를 이끌어 갑니다.",
+    "subtitle": "Core AI and applied research are not separate; each drives the other.",
+    "items": [
+      {
+        "id": "core",
+        "title_ko": "코어 AI",
+        "title": "Core AI",
+        "lead_ko": "AI와 데이터 사이언스 기술 자체를 연구합니다.",
+        "lead": "We research the technology itself.",
+        "text_ko": "에이전트 시스템, 메모리, LLM 평가와 정렬, 정보 검색, 이상 탐지 방법론처럼 기술 자체를 연구합니다. 새로운 방법을 제안하고, 벤치마크를 만들어 기술의 한계를 측정합니다.",
+        "text": "We research the methods themselves: agent systems, memory, LLM evaluation and alignment, retrieval, and anomaly detection. We propose new methods and build benchmarks that measure where the technology falls short.",
+        "topics_ko": [
+          "에이전트 시스템",
+          "에이전트 메모리",
+          "LLM 평가 · 정렬",
+          "정보 검색",
+          "이상 탐지 방법론"
+        ],
+        "topics": [
+          "Agent systems",
+          "Agent memory",
+          "LLM evaluation & alignment",
+          "Retrieval",
+          "Anomaly detection methods"
+        ]
+      },
+      {
+        "id": "applied",
+        "title_ko": "응용 연구",
+        "title": "Applied Research",
+        "lead_ko": "그 기술로 산업 현장의 문제를 풉니다.",
+        "lead": "Solving real industry problems with that technology.",
+        "text_ko": "제조, 법률, 금융, 교육, 무역 등 여러 분야의 기업·기관과 함께 실제 데이터와 제약 속에서 문제를 정의하고, 결과가 의사결정과 가치로 이어지도록 합니다.",
+        "text": "With companies and institutions in manufacturing, law, finance, education, trade, and more, we define problems within real data and constraints and make results lead to decisions and value.",
+        "topics_ko": [
+          "제조",
+          "법률",
+          "AI 서비스",
+          "금융",
+          "교육",
+          "무역"
+        ],
+        "topics": [
+          "Manufacturing",
+          "Legal",
+          "AI services",
+          "Finance",
+          "Education",
+          "Trade"
+        ]
+      }
+    ],
+    "why_title_ko": "왜 코어 연구를 하는가",
+    "why_title": "Why core research matters",
+    "why": [
+      {
+        "title_ko": "무엇을 풀 수 있는지 알기 위해",
+        "title": "To know what is solvable",
+        "text_ko": "AI는 빠르게 발전하고, 그에 따라 풀 수 있는 문제의 범위도 계속 바뀝니다. 기술을 직접 연구해야 지금 가능한 것과 아직 어려운 것을 정확히 구분할 수 있습니다.",
+        "text": "AI moves fast, and the range of solvable problems shifts with it. Researching the technology directly is how we tell what is possible now from what is still hard."
+      },
+      {
+        "title_ko": "한계를 먼저 찾기 위해",
+        "title": "To find the limits first",
+        "text_ko": "현장에 적용하기 전에 모델이 어디서 실패하는지 먼저 확인합니다. 에이전트의 반복 호출 루프, 긴 문맥 공격, 관점 이탈 같은 문제를 연구로 먼저 밝혀냈습니다.",
+        "text": "Before deploying, we find where models fail. Our research has surfaced tool-call loops in agents, long-context attacks, and perspective drift.",
+        "papers": [
+          "A1",
+          "C5",
+          "C9"
+        ]
+      },
+      {
+        "title_ko": "새로운 방법을 현장으로 가져오기 위해",
+        "title": "To bring new methods to the field",
+        "text_ko": "코어 연구에서 나온 방법은 곧바로 응용 연구에 쓰입니다. 대화 데이터 검색, 장기 기억, 질의 확장 방법이 실제 서비스 분석 문제에 활용되고 있습니다.",
+        "text": "Methods from core research go straight into applied work. Our conversational retrieval, long-term memory, and query expansion methods are used on real service analytics problems.",
+        "papers": [
+          "C2",
+          "C7",
+          "C6"
+        ]
+      }
+    ],
+    "trust": {
+      "title_ko": "신뢰성",
+      "title": "Trust",
+      "lead_ko": "믿고 쓸 수 있는 AI를 만듭니다.",
+      "lead": "Making AI that can be trusted.",
+      "text_ko": "안전성과 해석력은 코어 AI와 응용 연구 모두에 공통으로 적용하는 기준입니다. 모델이 어디서 실패하는지 찾고, 왜 그렇게 판단했는지 설명할 수 있도록 연구합니다.",
+      "text": "Safety and interpretability are a standard for both core AI and applied research: finding where models fail and explaining why they decide what they do."
+    }
+  },
+  "core_research": {
+    "title_ko": "코어 AI",
+    "title": "Core AI",
+    "band_label_ko": "코어 AI",
+    "band_label": "Core AI",
+    "description_ko": "가운데 열의 기술들을 적용만 하는 것이 아니라 기술 자체를 연구합니다. 에이전트 시스템, 에이전트 메모리, LLM 평가와 정렬, 정보 검색, 이상 탐지 방법론을 연구하며, 이를 통해 어떤 문제를 풀 수 있는지 판단합니다.",
+    "description": "We don't only apply the techniques in the middle column; we research them. Agent systems, agent memory, LLM evaluation and alignment, retrieval, and anomaly detection methods, which tells us which problems are solvable.",
+    "topics_ko": [
+      "에이전트 시스템",
+      "에이전트 메모리",
+      "LLM 평가 · 정렬",
+      "정보 검색",
+      "이상 탐지 방법론"
+    ],
+    "topics": [
+      "Agent systems",
+      "Agent memory",
+      "LLM evaluation & alignment",
+      "Retrieval",
+      "Anomaly detection methods"
+    ],
+    "papers": [
+      "A1",
+      "U5",
+      "C7",
+      "C9",
+      "C5",
+      "C2",
+      "C6",
+      "U4"
+    ]
+  },
+  "applied_research": {
+    "title_ko": "응용 연구",
+    "title": "Applied Research",
+    "band_label_ko": "응용 연구",
+    "band_label": "Applied Research",
+    "description_ko": "코어 AI에서 연구한 기술을 여러 산업 분야의 문제에 적용합니다. 각 분야의 기업·기관과 함께 실제 데이터와 제약 속에서 문제를 정의하고, 결과가 의사결정과 가치로 이어지도록 합니다.",
+    "description": "We apply the technology from core AI to problems across industries, working with companies and institutions on real data and constraints so results lead to decisions and value."
+  },
+  "structure_view": "radial"
+}

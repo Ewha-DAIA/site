@@ -1,1 +1,213 @@
-[]
+[
+  {
+    "id": 1,
+    "era": "ewha",
+    "title_ko": "Agentic AI 운용 신뢰성 확보를 위한 안전화 기술 연구",
+    "title": "Safety Techniques for Reliable Operation of Agentic AI",
+    "sponsor_ko": "콕스웨이브",
+    "sponsor": "Coxwave",
+    "period": "2026.06 –",
+    "role_ko": "연구책임자",
+    "role": "Principal Investigator",
+    "ongoing": true,
+    "logos": [
+      "./assets/projects/coxwave.png"
+    ]
+  },
+  {
+    "id": 2,
+    "era": "ewha",
+    "title_ko": "Legal AI 관련 기술 동향 연구",
+    "title": "Research on Legal AI Technology Trends",
+    "sponsor_ko": "김·장 법률사무소",
+    "sponsor": "Kim & Chang",
+    "period": "2026.06 –",
+    "role_ko": "연구책임자",
+    "role": "Principal Investigator",
+    "ongoing": true,
+    "logos": [
+      "./assets/projects/kimchang.png"
+    ]
+  },
+  {
+    "id": 11,
+    "era": "ewha",
+    "title_ko": "반도체 제조 공정 단계의 도메인 지식을 통합한 해석 가능 AI 이상탐지 기술 개발",
+    "title": "Interpretable Anomaly Detection for Semiconductor Manufacturing Integrating Process-Step Domain Knowledge",
+    "sponsor_ko": "이화여자대학교",
+    "sponsor": "Ewha Womans University",
+    "period": "2026.03 –",
+    "role_ko": "연구책임자",
+    "role": "Principal Investigator",
+    "ongoing": true,
+    "logos": [
+      "./assets/projects/ewha.png"
+    ]
+  },
+  {
+    "id": 12,
+    "era": "ewha",
+    "title_ko": "AI Agent 기반 지능형 스마트시티 운영·거버넌스 구축",
+    "title": "Intelligent Smart City Operation and Governance through AI Agents",
+    "sponsor_ko": "이화여자대학교 · Ewha Global Excellence Program (EGEP)",
+    "sponsor": "Ewha Womans University · Ewha Global Excellence Program (EGEP)",
+    "period": "2026 –",
+    "role_ko": "참여연구원",
+    "role": "Participating Researcher",
+    "ongoing": true,
+    "logos": [
+      "./assets/projects/ewha.png"
+    ]
+  },
+  {
+    "id": 4,
+    "era": "ewha",
+    "title_ko": "에이전틱 AI의 안전한 운용을 위한 실패 원인 추적 및 실시간 이상 탐지 가드레일 연구",
+    "title": "Failure Attribution and Real-Time Anomaly Detection Guardrails for Safe Agentic AI",
+    "sponsor_ko": "인간중심인공지능연구원 · G-LAMP 사업",
+    "sponsor": "Institute for Human-Centered AI · G-LAMP Program",
+    "period": "2026.09 –",
+    "role_ko": "연구책임자",
+    "role": "Principal Investigator",
+    "ongoing": true,
+    "logos": [
+      "./assets/projects/AIRI.png"
+    ]
+  },
+  {
+    "id": 3,
+    "era": "ewha",
+    "title_ko": "「지시이행」 능력 평가 벤치마크 구축",
+    "title": "Instruction-Following Evaluation Benchmark",
+    "sponsor_ko": "과학기술정보통신부 · 한국지능정보사회진흥원(NIA)",
+    "sponsor": "Ministry of Science and ICT · NIA",
+    "period": "2026.05 –",
+    "role_ko": "자문",
+    "role": "Advisor",
+    "ongoing": true,
+    "logos": [
+      "./assets/projects/msit.png",
+      "./assets/projects/NIA.png"
+    ]
+  },
+  {
+    "id": 5,
+    "era": "before",
+    "title_ko": "제조 데이터 유형 분류 및 상관 분석을 통한 혐의분석 자동화",
+    "title": "Automated Suspect Analysis via Manufacturing Data Type Classification and Correlation Analysis",
+    "sponsor_ko": "삼성전자 · 서울대학교",
+    "sponsor": "Samsung Electronics · Seoul National University",
+    "period": "2023.06 – 2023.12",
+    "role_ko": "",
+    "role": "",
+    "logos": [
+      "./assets/projects/samsung_electronics.png",
+      "./assets/projects/snu.png"
+    ]
+  },
+  {
+    "id": 6,
+    "era": "before",
+    "title_ko": "딥러닝을 활용한 강건한 설비 이상 탐지 기법 연구",
+    "title": "Robust Equipment Anomaly Detection with Deep Learning",
+    "sponsor_ko": "삼성전자 · 서울대학교",
+    "sponsor": "Samsung Electronics · Seoul National University",
+    "period": "2020.12 – 2021.08",
+    "role_ko": "",
+    "role": "",
+    "logos": [
+      "./assets/projects/samsung_electronics.png",
+      "./assets/projects/snu.png"
+    ]
+  },
+  {
+    "id": 7,
+    "era": "before",
+    "title_ko": "스마트제조를 위한 반도체 생산장비용 AI 기반 공정진단 시스템 개발",
+    "title": "AI-Based Process Diagnosis System for Semiconductor Equipment in Smart Manufacturing",
+    "sponsor_ko": "TIPS · 알티엠",
+    "sponsor": "TIPS · RTM",
+    "period": "2020.08 – 2022.07",
+    "role_ko": "",
+    "role": "",
+    "logos": [
+      "./assets/projects/tips.png",
+      "./assets/projects/rtm.png"
+    ]
+  },
+  {
+    "id": 8,
+    "era": "before",
+    "title_ko": "실시간 공정 제어가 가능한 원자층 식각 장비",
+    "title": "Atomic Layer Etching Equipment with Real-Time Process Control",
+    "sponsor_ko": "산업통상자원부 · 알티엠",
+    "sponsor": "Ministry of Trade, Industry and Energy · RTM",
+    "period": "2020.07 – 2023.07",
+    "role_ko": "",
+    "role": "",
+    "logos": [
+      "./assets/projects/motie.png",
+      "./assets/projects/rtm.png"
+    ]
+  },
+  {
+    "id": 9,
+    "era": "before",
+    "title_ko": "예방품질능력 강화를 위한 컨버터 지능형 진단 기술 개발",
+    "title": "Intelligent Converter Diagnosis for Preventive Quality",
+    "sponsor_ko": "현대NGV · 서울대학교",
+    "sponsor": "Hyundai NGV · Seoul National University",
+    "period": "2019.07 – 2020.05",
+    "role_ko": "",
+    "role": "",
+    "logos": [
+      "./assets/projects/hyundai_ngv.png",
+      "./assets/projects/snu.png"
+    ]
+  },
+  {
+    "id": 10,
+    "era": "before",
+    "title_ko": "기계학습을 활용한 데이터 기반 진단, 고장예지 및 내구성 평가",
+    "title": "Data-Driven Diagnosis, Failure Prediction, and Durability Assessment with Machine Learning",
+    "sponsor_ko": "삼성전자 · 서울대학교",
+    "sponsor": "Samsung Electronics · Seoul National University",
+    "period": "2019.07 – 2020.06",
+    "role_ko": "",
+    "role": "",
+    "logos": [
+      "./assets/projects/samsung_electronics.png",
+      "./assets/projects/snu.png"
+    ]
+  },
+  {
+    "id": 13,
+    "era": "before",
+    "title_ko": "유니폼 데이터 분석을 통한 비즈니스 인사이트 도출 및 의류 수요예측 모델 개발",
+    "title": "Business Insights from Uniform Data and Apparel Demand Forecasting",
+    "sponsor_ko": "온아웃 · 굿유",
+    "sponsor": "On-Out · GoodU",
+    "period": "2023.10 – 2024.01",
+    "role_ko": "",
+    "role": "",
+    "logos": [
+      "./assets/projects/onout.png",
+      "./assets/projects/goodu.png"
+    ]
+  },
+  {
+    "id": 14,
+    "era": "before",
+    "title_ko": "자동차보상 고객 통화응대 AI 분석 시스템 구축",
+    "title": "AI Analysis System for Auto Insurance Claims Customer Calls",
+    "sponsor_ko": "삼성화재 · 콕스웨이브",
+    "sponsor": "Samsung Fire & Marine Insurance · Coxwave",
+    "period": "2025.04 – 2025.10",
+    "role_ko": "",
+    "role": "",
+    "logos": [
+      "./assets/projects/samsung_fire.png",
+      "./assets/projects/coxwave.png"
+    ]
+  }
+]

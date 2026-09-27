@@ -1,6 +1,6 @@
 [
   {
-    "id": "U7",
+    "id": "U5",
     "title": "SAGE-VP: Structure-Aware Agentic View Planning for Single-View 3D Reconstruction",
     "authors": "**Kaeun Han**, **Minji Kim**, **Sangyeop Kim†**",
     "venue": "",
@@ -12,7 +12,7 @@
     ]
   },
   {
-    "id": "U6",
+    "id": "U4",
     "title": "Attention Divergence via Process-Step Masked Self-Supervised Learning for Semiconductor Anomaly Detection",
     "authors": "Yeonmo Kim, **Sangyeop Kim†**",
     "venue": "",
@@ -24,7 +24,7 @@
     ]
   },
   {
-    "id": "U5",
+    "id": "U3",
     "title": "Multi-Domain Learning for Sentencing Factor Extraction in Korean Criminal Judgments",
     "authors": "Min Choi, **Sangyeop Kim†**",
     "venue": "",
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "id": "U4",
+    "id": "U2",
     "title": "Confidence-guided dual-adapter fusion for multimodal aspect-based sentiment analysis",
     "authors": "Hyunjong Kim, **Sangyeop Kim†**",
     "venue": "",
@@ -45,30 +45,6 @@
     "tags": [
       "Multimodal",
       "Sentiment Analysis"
-    ]
-  },
-  {
-    "id": "U3",
-    "title": "Overthinking Loops in Agents: A Structural Risk via MCP Tools",
-    "authors": "Yohan Lee, Seoyeon Choi, Jisoo Jang, **Sangyeop Kim**, Seungtaek Choi†",
-    "venue": "",
-    "year": "Under Review",
-    "link": "",
-    "tags": [
-      "Agent Safety",
-      "MCP"
-    ]
-  },
-  {
-    "id": "U2",
-    "title": "Beyond Factual Accuracy: A Benchmark for Evaluating Perspective Alignment in LLMs",
-    "authors": "Sunghoon Kim, **Sangyeop Kim†**",
-    "venue": "",
-    "year": "Under Review",
-    "link": "",
-    "tags": [
-      "AI Alignment",
-      "Benchmark"
     ]
   },
   {
@@ -81,6 +57,33 @@
     "tags": [
       "HCI",
       "LLM"
+    ]
+  },
+  {
+    "id": "C9",
+    "title": "Beyond Factual Accuracy: A Benchmark for Evaluating Perspective Alignment in LLMs",
+    "authors": "Sunghoon Kim, **Sangyeop Kim†**",
+    "venue": "Findings of IJCNLP-AACL 2026",
+    "year": "2026",
+    "link": "",
+    "tags": [
+      "AI Alignment",
+      "Benchmark"
+    ]
+  },
+  {
+    "id": "A1",
+    "title": "Overthinking Loops in Agents: A Structural Risk via MCP Tools",
+    "authors": "Yohan Lee, Seoyeon Choi, Jisoo Jang, **Sangyeop Kim**, Seungtaek Choi†",
+    "venue": "",
+    "year": "2026",
+    "link": "https://arxiv.org/pdf/2602.14798",
+    "tags": [
+      "Agent Safety",
+      "MCP"
+    ],
+    "badges": [
+      "arXiv"
     ]
   },
   {

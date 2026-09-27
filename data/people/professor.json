@@ -4,12 +4,13 @@
     "name": "김상엽 (Sangyeop Kim)",
     "role": "Assistant Professor",
     "department": "Department of Data Science, Ewha Womans University",
-    "bio": "Sangyeop Kim received the B.S., M.S., and Ph.D. degrees in Industrial Engineering from Seoul National University, Seoul, Korea, in 2019, 2021, and 2025, respectively. His Ph.D. thesis focused on the integration of Large Language Models and Information Retrieval for semantic search, recommendation, and user analysis. He is currently an Assistant Professor at Ewha Womans University. Before joining academia, he served as an AI Lead at Coxwave (2023–2025), developing conversation analytics solutions, and at RTM (2020–2023), leading the deployment of manufacturing AI systems at Intel's semiconductor fabrication plant. He also worked as an AI Consultant at Kim & Chang. His research interests include Multimodal AI, Data Science for Information Systems, Semantic Search, and Trustworthy AI Systems.",
+    "bio": "Sangyeop Kim is an Assistant Professor in the Department of Data Science at Ewha Womans University, where he has run DAIA Lab since March 2026. He received his B.S., M.S., and Ph.D. in Industrial Engineering from Seoul National University; his doctoral research combined large language models and information retrieval for semantic search, recommendation, and user analysis. Before joining academia, he built and deployed AI in industry. As AI Lead at RTM, he brought manufacturing AI systems into Intel's semiconductor fabs, and as AI Lead at Coxwave he developed conversation analytics solutions. He continues to work with industry as an advisor to Kim & Chang and Coxwave. His research covers core AI technologies such as agentic AI, information retrieval, and natural language processing, and their application to real problems in manufacturing, law, finance, and beyond, with a particular focus on AI that can be trusted in practice.",
     "image": "./assets/people/sangyeop.jpg",
     "contact": {
       "office": "Ewha Jinseonmi-gwan 418",
       "tel": "+82-2-3277-4077",
-      "email": "yeop@ewha.ac.kr"
+      "email": "yeop@ewha.ac.kr",
+      "office_ko": "이화여대 진선미관 418호"
     },
     "social": {
       "email": "sy917kim@gmail.com",
@@ -21,21 +22,41 @@
     "sections": [
       {
         "title": "Education",
+        "title_ko": "학력",
         "items": [
           "<span class=\"degree\">Ph.D.</span> Industrial Engineering, Seoul National University, 2025",
           "<span class=\"degree\">M.S.</span> Industrial Engineering, Seoul National University, 2021",
           "<span class=\"degree\">B.S.</span> Industrial Engineering, Seoul National University, 2019"
+        ],
+        "items_ko": [
+          "<span class=\"degree\">박사</span> 서울대학교 산업공학과, 2025",
+          "<span class=\"degree\">석사</span> 서울대학교 산업공학과, 2021",
+          "<span class=\"degree\">학사</span> 서울대학교 산업공학과, 2019"
         ]
       },
       {
         "title": "Experience",
+        "title_ko": "경력",
         "items": [
-          "<span class=\"position\">Assistant Professor</span> Ewha Womans University, 2026–Present",
-          "<span class=\"position\">AI Researcher</span> Kim & Chang, 2025–Present",
-          "<span class=\"position\">AI Lead</span> Coxwave, 2023–2025",
-          "<span class=\"position\">AI Lead</span> RTM, 2020–2023"
+          "<span class=\"position\">Assistant Professor</span> Ewha Womans University, 2026.03–Present",
+          "<span class=\"position\">Advisor</span> Kim & Chang, 2026.06–Present",
+          "<span class=\"position\">Advisor</span> Coxwave, 2026.06–Present",
+          "<span class=\"position\">AI Researcher</span> Kim & Chang, 2025.10–2026.02",
+          "<span class=\"position\">AI Lead</span> Coxwave, 2023.08–2025.10",
+          "<span class=\"position\">AI Lead</span> RTM, 2020.04–2023.08"
+        ],
+        "items_ko": [
+          "<span class=\"position\">조교수</span> 이화여자대학교, 2026.03–현재",
+          "<span class=\"position\">자문위원</span> 김·장 법률사무소, 2026.06–현재",
+          "<span class=\"position\">자문위원</span> 콕스웨이브, 2026.06–현재",
+          "<span class=\"position\">AI 연구원</span> 김·장 법률사무소, 2025.10–2026.02",
+          "<span class=\"position\">AI 리드</span> 콕스웨이브, 2023.08–2025.10",
+          "<span class=\"position\">AI 리드</span> 알티엠, 2020.04–2023.08"
         ]
       }
-    ]
+    ],
+    "role_ko": "조교수",
+    "department_ko": "이화여자대학교 데이터사이언스학과",
+    "bio_ko": "2026년 3월부터 이화여자대학교 데이터사이언스학과 조교수로 재직하며 DAIA Lab을 운영하고 있습니다. 서울대학교 산업공학과에서 학사, 석사, 박사 학위를 받았으며, 박사 과정에서는 대규모 언어 모델과 정보 검색을 결합해 의미 기반 검색, 추천, 사용자 분석을 연구했습니다. 학계에 오기 전에는 산업 현장에서 AI를 직접 만들고 적용했습니다. 알티엠에서는 AI 리드로 Intel 반도체 공장에 제조 AI 시스템을 도입했고, 콕스웨이브에서는 AI 리드로 대화 분석 솔루션을 개발했습니다. 지금도 김·장 법률사무소와 콕스웨이브의 자문위원으로 현장과 함께하고 있습니다. 에이전틱 AI, 정보 검색, 자연어 처리 같은 AI 핵심 기술을 연구하고, 이를 제조, 법률, 금융 등 실제 산업 문제에 적용하는 데 관심을 두고 있습니다. 특히 현장에서 믿고 쓸 수 있는 AI를 만드는 일에 주목하고 있습니다."
   }
 ]

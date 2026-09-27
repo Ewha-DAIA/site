@@ -30,6 +30,7 @@ export default function Header() {
         <li><a href="#/projects">Projects</a></li>
         <li><a href="#/teaching">Teaching</a></li>
         <li><a href="#/gallery">Gallery</a></li>
+        <li><a href="#/join">Join Us</a></li>
         <li><a href="#/contact">Contact</a></li>
       </ul>
     </nav>

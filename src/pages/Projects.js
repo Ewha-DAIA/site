@@ -1,231 +1,80 @@
 import { loadData } from '../utils/dataLoader.js';
-
-let cachedProjects = [];
-let currentLang = 'en'; // Default to English
+import { getLang, setLang, pick, langToggle } from '../utils/lang.js?v=3';
 
 export function mount() {
-  window.toggleProjectLang = () => {
-    currentLang = currentLang === 'ko' ? 'en' : 'ko';
-    const langBtn = document.getElementById('project-lang-toggle');
-    
-    // Update button text
-    langBtn.textContent = currentLang === 'ko' ? 'EN' : 'KO';
-    
-    // Re-render detail view if it's currently shown
-    const detailView = document.getElementById('project-detail-view');
-    if (detailView && detailView.style.display !== 'none') {
-      // Find which project is currently showing
-      const currentProjectId = window.__currentProjectId;
-      if (currentProjectId) {
-        const project = cachedProjects.find(p => p.id === currentProjectId);
-        if (project) {
-          const detailHTML = renderProjectDetail(project);
-          detailView.innerHTML = `
-            <button class="back-btn" onclick="hideProjectDetail()">← ${currentLang === 'ko' ? '프로젝트 목록으로' : 'Back to Projects'}</button>
-            ${detailHTML}
-          `;
-        }
-      }
-    }
-    
-    // Update grid cards
-    const gridCards = document.querySelectorAll('.project-grid-title');
-    cachedProjects.forEach((project, index) => {
-      if (gridCards[index]) {
-        gridCards[index].textContent = currentLang === 'ko' ? project.title_ko : project.title;
-      }
-    });
+  window.toggleProjectLang = async (lang) => {
+    setLang(lang);
+    document.getElementById('main-content').innerHTML = await Projects();
   };
-
-  window.showProjectDetail = (id) => {
-    const project = cachedProjects.find(p => p.id === id);
-    if (!project) return;
-    
-    window.__currentProjectId = id;
-    
-    const detailContainer = document.getElementById('project-detail-view');
-    const listContainer = document.getElementById('projects-grid-view');
-    
-    // Render detail content
-    const detailHTML = renderProjectDetail(project);
-    detailContainer.innerHTML = `
-      <button class="back-btn" onclick="hideProjectDetail()">← ${currentLang === 'ko' ? '프로젝트 목록으로' : 'Back to Projects'}</button>
-      ${detailHTML}
-    `;
-    
-    listContainer.style.display = 'none';
-    detailContainer.style.display = 'block';
-    window.scrollTo(0, 0);
-    
-    // Add to browser history
-    window.history.pushState({ view: 'detail', projectId: id }, '', `#/projects/${id}`);
-  };
-
-  window.hideProjectDetail = () => {
-    document.getElementById('project-detail-view').style.display = 'none';
-    document.getElementById('projects-grid-view').style.display = 'grid';
-    window.__currentProjectId = null;
-    
-    // Update history to main projects page
-    window.history.pushState({ view: 'list' }, '', '#/projects');
-  };
-  
-  // Handle browser back/forward buttons
-  window.addEventListener('popstate', (event) => {
-    if (window.location.hash.startsWith('#/projects')) {
-      if (event.state && event.state.view === 'detail' && event.state.projectId) {
-        // Show detail view
-        showProjectDetail(event.state.projectId);
-      } else {
-        // Show list view
-        const detailView = document.getElementById('project-detail-view');
-        const listView = document.getElementById('projects-grid-view');
-        if (detailView && listView) {
-          detailView.style.display = 'none';
-          listView.style.display = 'grid';
-        }
-      }
-    }
-  });
 }
 
-function renderProjectDetail(project) {
-  const detail = project.detail || {};
-  const lang = currentLang;
-  
-  const title = lang === 'ko' ? project.title_ko : project.title;
-  const desc = lang === 'ko' ? project.description_ko : project.description;
-  const overview = detail[`overview_${lang}`] || detail.overview;
-  const objectives = detail[`objectives_${lang}`] || detail.objectives;
-  const approach = detail[`approach_${lang}`] || detail.approach;
-  const results = detail[`results_${lang}`] || detail.results;
-  const team = detail[`team_${lang}`] || detail.team;
-  
-  const labels = lang === 'ko' ? {
-    overview: '개요',
-    objectives: '목표',
-    approach: '접근 방법',
-    technologies: '기술',
-    results: '결과 및 영향',
-    team: '팀'
-  } : {
-    overview: 'Overview',
-    objectives: 'Objectives',
-    approach: 'Approach',
-    technologies: 'Technologies',
-    results: 'Results & Impact',
-    team: 'Team'
-  };
-  
-  return `
-    <div class="detail-content">
-      <div class="detail-header">
-        <h2 class="detail-title">${title}</h2>
-        <p class="detail-meta">
-          <span class="detail-sponsor">${project.sponsor}</span> · 
-          <span class="detail-period">${project.period}</span> · 
-          <span class="detail-status status-${project.status.toLowerCase()}">${project.status}</span>
-        </p>
-      </div>
-      
-      <div class="detail-image-wrapper">
-        <img src="${project.image}" alt="${title}">
-      </div>
-      
-      <div class="detail-tags">
-        ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-      </div>
-      
-      ${overview ? `
-        <section class="detail-section">
-          <h3 class="detail-section-title">${labels.overview}</h3>
-          <p class="detail-text">${overview}</p>
-        </section>
-      ` : ''}
-      
-      ${objectives ? `
-        <section class="detail-section">
-          <h3 class="detail-section-title">${labels.objectives}</h3>
-          <ul class="detail-list">
-            ${objectives.map(obj => `<li>${obj}</li>`).join('')}
-          </ul>
-        </section>
-      ` : ''}
-      
-      ${approach ? `
-        <section class="detail-section">
-          <h3 class="detail-section-title">${labels.approach}</h3>
-          <p class="detail-text">${approach}</p>
-        </section>
-      ` : ''}
-      
-      ${detail.technologies ? `
-        <section class="detail-section">
-          <h3 class="detail-section-title">${labels.technologies}</h3>
-          <ul class="detail-tech-list">
-            ${detail.technologies.map(tech => `<li>${tech}</li>`).join('')}
-          </ul>
-        </section>
-      ` : ''}
-      
-      ${results ? `
-        <section class="detail-section">
-          <h3 class="detail-section-title">${labels.results}</h3>
-          <ul class="detail-list">
-            ${results.map(result => `<li>${result}</li>`).join('')}
-          </ul>
-        </section>
-      ` : ''}
-      
-      ${team ? `
-        <section class="detail-section">
-          <h3 class="detail-section-title">${labels.team}</h3>
-          <ul class="detail-team-list">
-            ${team.map(member => `<li>${member}</li>`).join('')}
-          </ul>
-        </section>
-      ` : ''}
-      
-      ${!overview && !objectives ? `
-        <section class="detail-section">
-          <p class="detail-text">${desc || project.description}</p>
-        </section>
-      ` : ''}
+const renderLogos = (project, lang, cls) => (project.logos || []).length
+  ? project.logos.map(src => `<img class="${cls}" src="${src}" alt="${pick(project, 'sponsor', lang)}">`).join('')
+  : '';
+
+const renderCurrent = (project, lang) => `
+  <div class="pj-card">
+    <div class="pj-logo">
+      ${renderLogos(project, lang, 'pj-logo-img') || `<span>${pick(project, 'sponsor', lang)}</span>`}
     </div>
-  `;
-}
+    <div class="pj-info">
+      <div class="pj-badges">
+        ${project.ongoing
+          ? `<span class="pj-badge pj-badge-live">${lang === 'ko' ? '진행 중' : 'Ongoing'}</span>`
+          : `<span class="pj-badge pj-badge-done">${lang === 'ko' ? '완료' : 'Completed'}</span>`}
+        ${pick(project, 'role', lang) ? `<span class="pj-badge">${pick(project, 'role', lang)}</span>` : ''}
+      </div>
+      <h3 class="pj-title">${pick(project, 'title', lang)}</h3>
+      <p class="pj-meta">${pick(project, 'sponsor', lang)}${project.period ? ` · ${project.period}` : ''}</p>
+    </div>
+  </div>
+`;
+
+// Earlier projects: date | title (+ sponsor, role only when PI) | logo
+const renderPast = (project, lang) => `
+  <li class="pj-row">
+    <span class="pj-row-period">${project.period}</span>
+    <div>
+      <p class="pj-row-title">${pick(project, 'title', lang)}
+        ${pick(project, 'role', lang) ? `<span class="pj-badge">${pick(project, 'role', lang)}</span>` : ''}
+      </p>
+      <p class="pj-meta">${pick(project, 'sponsor', lang)}</p>
+    </div>
+    <div class="pj-row-logo">${renderLogos(project, lang, '')}</div>
+  </li>
+`;
 
 export default async function Projects() {
-  cachedProjects = await loadData('projects.json');
-  if (!cachedProjects) return '<p>Error loading projects data.</p>';
+  const projects = await loadData('projects.json');
+  if (!projects) return '<p>Error loading projects data.</p>';
+  const lang = getLang();
+  const ko = lang === 'ko';
+  const ongoing = projects.filter(p => p.era === 'ewha' && p.ongoing);
+  const completed = projects.filter(p => p.era === 'ewha' && !p.ongoing);
+  const past = projects.filter(p => p.era !== 'ewha');
 
   return `
     <section class="page-content">
-      <div class="page-header">
-        <h1 class="page-title">Projects</h1>
-        <button id="project-lang-toggle" class="lang-toggle-btn" onclick="toggleProjectLang()">KO</button>
-      </div>
-      
-      <!-- Grid View -->
-      <div id="projects-grid-view" class="projects-grid">
-        ${cachedProjects.map(project => `
-          <div class="project-card-grid" onclick="showProjectDetail(${project.id})">
-            <div class="project-grid-image">
-              <img src="${project.image}" alt="${project.title}">
-            </div>
-            <div class="project-grid-info">
-              <h3 class="project-grid-title">${project.title}</h3>
-              <p class="project-grid-agency">${project.sponsor}</p>
-              <div class="project-tags">
-                ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-              </div>
-            </div>
-          </div>
-        `).join('')}
+      <div class="ra-page-header">
+        <h1 class="page-title">${ko ? '프로젝트' : 'Projects'}</h1>
+        ${langToggle('toggleProjectLang', lang)}
       </div>
 
-      <!-- Detail View (Hidden by default) -->
-      <div id="project-detail-view" class="project-detail" style="display: none;"></div>
+      <div class="pj-container">
+        <h2 class="rs-section-title">${ko ? 'DAIA Lab 프로젝트' : 'DAIA Lab Projects'}</h2>
+        <p class="rs-section-subtitle">${ko ? '이화여자대학교, 2026 –' : 'Ewha Womans University, 2026 –'}</p>
+        <h3 class="pj-subhead">${ko ? '진행 중' : 'Ongoing'}</h3>
+        <div class="pj-grid">${ongoing.map(p => renderCurrent(p, lang)).join('')}</div>
+        ${completed.length ? `
+          <h3 class="pj-subhead">${ko ? '완료' : 'Completed'}</h3>
+          <div class="pj-grid pj-grid-done">${completed.map(p => renderCurrent(p, lang)).join('')}</div>
+        ` : ''}
+
+        <section class="pj-past">
+          <h2 class="rs-section-title">${ko ? '이화여대 합류 이전' : 'Before Ewha'}</h2>
+          <ul class="pj-list">${past.map(p => renderPast(p, lang)).join('')}</ul>
+        </section>
+      </div>
     </section>
   `;
 }

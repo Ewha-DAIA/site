@@ -1,14 +1,38 @@
 [
     {
         "id": 1,
+        "code": "G18870",
+        "name": "텍스트데이터분석",
+        "name_eng": "Text Data Analysis",
+        "semester": "Fall 2026",
+        "graduate": true
+    },
+    {
+        "id": 2,
+        "code": "39215",
+        "name": "비즈니스애널리틱스",
+        "name_eng": "Business Analytics",
+        "semester": "Fall 2026",
+        "graduate": false
+    },
+    {
+        "id": 3,
+        "code": "39138",
+        "name": "인공지능데이터사이언스의이해",
+        "name_eng": "Understanding of AI and Data Science",
+        "semester": "Fall 2026",
+        "graduate": false
+    },
+    {
+        "id": 4,
         "code": "39221",
-        "name": "소셜 인텔리전스",
+        "name": "소셜인텔리전스",
         "name_eng": "Social Intelligence",
         "semester": "Spring 2026",
         "graduate": false
     },
     {
-        "id": 2,
+        "id": 5,
         "code": "39223",
         "name": "의사결정론",
         "name_eng": "Data-Driven Decsion Making Theory",
@@ -16,7 +40,7 @@
         "graduate": false
     },
     {
-        "id": 3,
+        "id": 6,
         "code": "G188779",
         "name": "고급비즈니스애널리틱스",
         "name_eng": "Advanced Business Analytics",

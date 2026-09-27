@@ -1,17 +1,17 @@
-import Header, { mountHeader } from './components/Header.js';
+import Header, { mountHeader } from './components/Header.js?v=2';
 import Footer from './components/Footer.js';
 
 const routes = {
-  '/': () => import('./pages/Home.js?v=5'),
+  '/': () => import('./pages/Home.js?v=12'),
   '/people': () => {
     // Redirect to professor by default
     window.location.hash = '#/people/professor';
-    return import('./pages/People/Professor.js');
+    return import('./pages/People/Professor.js?v=6');
   },
-  '/people/professor': () => import('./pages/People/Professor.js'),
-  '/people/members': () => import('./pages/People/Members.js'),
+  '/people/professor': () => import('./pages/People/Professor.js?v=6'),
+  '/people/members': () => import('./pages/People/Members.js?v=3'),
   '/people/alumni': () => import('./pages/People/Alumni.js'),
-  '/research': () => import('./pages/Research.js?v=5'),
+  '/research': () => import('./pages/Research.js?v=41'),
   '/publications': () => {
     // Redirect to international by default
     window.location.hash = '#/publications/international';
@@ -20,10 +20,11 @@ const routes = {
   '/publications/international': () => import('./pages/Publications/International.js'),
   '/publications/domestic': () => import('./pages/Publications/Domestic.js'),
   '/publications/patent': () => import('./pages/Publications/Patent.js'),
-  '/teaching': () => import('./pages/Teaching.js?v=3'),
+  '/teaching': () => import('./pages/Teaching.js?v=5'),
   '/gallery': () => import('./pages/Gallery.js?v=3'),
   '/contact': () => import('./pages/Contact.js?v=6'),
-  '/projects': () => import('./pages/Projects.js?v=3'),
+  '/join': () => import('./pages/Join.js?v=16'),
+  '/projects': () => import('./pages/Projects.js?v=14'),
 };
 
 const app = document.getElementById('app');

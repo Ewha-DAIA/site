@@ -2,16 +2,49 @@
   {
     "id": 1,
     "date": "2026-03",
+    "content_ko": "김상엽 교수가 연구책임자로 DAIA Lab을 시작했습니다.",
     "content": "Prof. Kim joined DAIA Lab as Principal Investigator."
   },
   {
     "id": 2,
     "date": "2026-03",
+    "content_ko": "황유선 학생이 DAIA Lab의 첫 번째 구성원으로 합류했습니다.",
     "content": "Yoosun Hwang joined DAIA Lab as the first member."
   },
   {
     "id": 3,
     "date": "2026-03",
+    "content_ko": "남재은, 박세은, 김효민, 공지율 학생이 학부 인턴으로 합류했습니다.",
     "content": "Jaeeun Nahm, Seeun Park, Hyomin Kim, and Jiyul Kong joined DAIA Lab as undergraduate interns."
+  },
+  {
+    "id": 4,
+    "date": "2026-06",
+    "content_ko": "김민영, 신우림 학생이 학부 인턴으로 합류했습니다.",
+    "content": "Minyoung Kim and Woorim Shin joined DAIA Lab as undergraduate interns."
+  },
+  {
+    "id": 5,
+    "date": "2026-09",
+    "content_ko": "\"Beyond Factual Accuracy: A Benchmark for Evaluating Perspective Alignment in LLMs\" 논문이 Findings of IJCNLP-AACL 2026에 채택되었습니다.",
+    "content": "Our paper \"Beyond Factual Accuracy: A Benchmark for Evaluating Perspective Alignment in LLMs\" has been accepted to Findings of IJCNLP-AACL 2026."
+  },
+  {
+    "id": 6,
+    "date": "2026-09",
+    "content_ko": "Azra Zulaikha Binti Zainol 학생이 박사과정으로 합류했습니다.",
+    "content": "Azra Zulaikha Binti Zainol joined DAIA Lab as a Ph.D. student."
+  },
+  {
+    "id": 7,
+    "date": "2026-09",
+    "content_ko": "정은지 학생이 학부 인턴으로 합류했습니다.",
+    "content": "Eunji Jeong joined DAIA Lab as an undergraduate intern."
+  },
+  {
+    "id": 8,
+    "date": "2026-10",
+    "content_ko": "국립중앙박물관에서 'AI 에이전트 구축 프로세스의 이해와 박물관 학예 데이터 기반 에이전트 제작 및 활용 방안'을 주제로 강연합니다.",
+    "content": "Talk at the National Museum of Korea on building AI agents and using museum curatorial data to create and apply them."
   }
 ]
