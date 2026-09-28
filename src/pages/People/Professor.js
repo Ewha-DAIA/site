@@ -89,7 +89,6 @@ export default async function Professor() {
     <section class="page-content">
       <div class="ra-page-header">
         <h1 class="page-title">${ko ? '교수' : 'Professor'}</h1>
-        ${langToggle('toggleProfessorLang', lang)}
       </div>
       
       <div class="people-sections">

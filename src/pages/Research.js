@@ -377,11 +377,11 @@ function renderBody() {
       <canvas class="rs-hero-canvas" aria-hidden="true"></canvas>
       <div class="rs-hero-text">
         ${data.intro.eyebrow ? `<p class="rs-hero-eyebrow">${t(data.intro, 'eyebrow')}</p>` : ''}
-        <p class="rs-headline">${t(data.intro, 'headline').split(' ').map((w, i) => `<span class="rs-word" style="animation-delay:${i * 0.08}s">${w}</span>`).join(' ')}</p>
+        <p class="rs-headline">${t(data.intro, 'headline')}</p>
         <p class="rs-intro-body">${t(data.intro, 'body')}</p>
         ${data.intro.pipeline ? `
           <ol class="rs-pipeline">
-            ${t(data.intro, 'pipeline').map((step, i) => `<li style="animation-delay:${0.4 + i * 0.15}s">${step}</li>`).join('')}
+            ${t(data.intro, 'pipeline').map((step, i) => `<li>${step}</li>`).join('')}
           </ol>
         ` : ''}
       </div>
@@ -389,7 +389,6 @@ function renderBody() {
 
     <section class="rs-section">
       <div class="rs-section-header rs-reveal">
-        <p class="rs-eyebrow">01 · Structure</p>
         <h2 class="rs-section-title">${t(data, 'map_title')}</h2>
       </div>
       <div class="rm-layout">
@@ -416,7 +415,6 @@ function renderBody() {
 
     <section class="rs-section">
       <div class="rs-section-header rs-reveal">
-        <p class="rs-eyebrow">02 · Approach</p>
         <h2 class="rs-section-title">${t(approach, 'title')}</h2>
         <p class="rs-section-subtitle">${t(approach, 'subtitle')}</p>
       </div>
@@ -433,7 +431,6 @@ function renderBody() {
 
     <section class="rs-section">
       <div class="rs-section-header rs-reveal">
-        <p class="rs-eyebrow">03 · Domains</p>
         <h2 class="rs-section-title">${t(data, 'domains_title')}</h2>
       </div>
       <div class="rs-domain-table">
@@ -685,7 +682,6 @@ export default async function Research() {
         <div>
           <h1 class="page-title">${ko() ? '연구 분야' : 'Research'}</h1>
         </div>
-        <div id="research-lang">${langToggle('toggleResearchLang')}</div>
       </div>
       <div id="research-body" class="rs-body">
         ${renderBody()}

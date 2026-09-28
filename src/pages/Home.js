@@ -113,10 +113,6 @@ function renderDynamic(news, lang) {
         <div class="highlight-section news-section-compact">
           <div class="news-header-compact">
             <h2 class="section-title-compact">${ko ? '최근 소식' : 'Latest News'}</h2>
-            <div class="ra-lang-toggle">
-              <button class="lang-btn ${ko ? 'active' : ''}" onclick="toggleNewsLang('ko')">한국어</button>
-              <button class="lang-btn ${ko ? '' : 'active'}" onclick="toggleNewsLang('en')">English</button>
-            </div>
           </div>
           <div class="news-list-compact" id="news-list">
             ${news.map((item, i) => `

@@ -8,9 +8,12 @@
       "links": [
         {
           "label": "관련 연구: Who&When (ICML 2025)",
-          "url": "https://arxiv.org/abs/2505.00212"
+          "url": "https://arxiv.org/abs/2505.00212",
+          "label_en": "Related work: Who&When (ICML 2025)"
         }
-      ]
+      ],
+      "title_en": "Failure Attribution",
+      "description_en": "When a multi-agent system fails, find which agent made the decisive error and at which step."
     },
     {
       "track": "core",
@@ -19,9 +22,12 @@
       "links": [
         {
           "label": "관련 연구: AgentForesight",
-          "url": "https://arxiv.org/abs/2605.08715"
+          "url": "https://arxiv.org/abs/2605.08715",
+          "label_en": "Related work: AgentForesight"
         }
-      ]
+      ],
+      "title_en": "Online Auditing",
+      "description_en": "Detect abnormal agent behavior in real time while a task is running, and study guardrails that step in before problems grow."
     },
     {
       "track": "core",
@@ -30,9 +36,12 @@
       "links": [
         {
           "label": "관련 논문: PREMem (Findings of EMNLP 2025)",
-          "url": "https://aclanthology.org/2025.findings-emnlp.1204/"
+          "url": "https://aclanthology.org/2025.findings-emnlp.1204/",
+          "label_en": "Related paper: PREMem (Findings of EMNLP 2025)"
         }
-      ]
+      ],
+      "title_en": "Online Memory for Agents",
+      "description_en": "How agents build, update, and use memory in real time as they interact with users."
     },
     {
       "track": "core",
@@ -41,9 +50,12 @@
       "links": [
         {
           "label": "관련 논문: SAGE-VP (심사 중)",
-          "url": ""
+          "url": "",
+          "label_en": "Related paper: SAGE-VP (under review)"
         }
-      ]
+      ],
+      "title_en": "Agentic Single-Image 3D Reconstruction",
+      "description_en": "When reconstructing 3D shape from a single image, an agent decides which extra viewpoints are needed to see hidden backs and occluded parts. Multi-agent roles for perception, planning, and critique plan the views with a vision-language model."
     },
     {
       "track": "applied",
@@ -53,9 +65,13 @@
       "links": [
         {
           "label": "관련 논문: Attention Divergence for Semiconductor Anomaly Detection (심사 중)",
-          "url": ""
+          "url": "",
+          "label_en": "Related paper: Attention Divergence for Semiconductor Anomaly Detection (under review)"
         }
-      ]
+      ],
+      "title_en": "Semiconductor Anomaly Detection with Process Knowledge",
+      "description_en": "Build the structure of semiconductor process steps into the model to detect equipment anomalies and explain which sensors and steps are involved.",
+      "domain_en": "Manufacturing"
     },
     {
       "track": "applied",
@@ -65,9 +81,13 @@
       "links": [
         {
           "label": "관련 논문: Multi-Domain Learning for Sentencing Factor Extraction (심사 중)",
-          "url": ""
+          "url": "",
+          "label_en": "Related paper: Multi-Domain Learning for Sentencing Factor Extraction (under review)"
         }
-      ]
+      ],
+      "title_en": "Sentencing Factor Extraction with Few Labels",
+      "description_en": "Small language models that extract sentencing factors from criminal judgments. We analyze how to mix data across crime types and propose choosing training data from label-free corpus statistics.",
+      "domain_en": "Legal"
     },
     {
       "track": "applied",
@@ -77,9 +97,13 @@
       "links": [
         {
           "label": "관련 논문: Same Facts, Different Sentences",
-          "url": ""
+          "url": "",
+          "label_en": "Related paper: Same Facts, Different Sentences"
         }
-      ]
+      ],
+      "title_en": "Consistency of LLM Sentencing Recommendations",
+      "description_en": "Check whether LLMs recommend different sentences for the same facts, measuring on real judgments how much recommendations shift across runs, models, wording, and fact order, and how sentencing guidelines affect them.",
+      "domain_en": "Legal"
     }
   ],
   "recruiting": [
@@ -89,19 +113,25 @@
       "links": [
         {
           "label": "관련 연구 1",
-          "url": "https://arxiv.org/pdf/2308.15366"
+          "url": "https://arxiv.org/pdf/2308.15366",
+          "label_en": "Related work 1"
         },
         {
           "label": "관련 연구 2",
-          "url": "https://arxiv.org/pdf/2412.04867"
+          "url": "https://arxiv.org/pdf/2412.04867",
+          "label_en": "Related work 2"
         },
         {
           "label": "관련 연구 3",
-          "url": "https://arxiv.org/pdf/2601.06204"
+          "url": "https://arxiv.org/pdf/2601.06204",
+          "label_en": "Related work 3"
         }
       ],
       "track": "applied",
-      "title_ko": "불확실성 기반 VLM 에이전트 비전 검사"
+      "title_ko": "불확실성 기반 VLM 에이전트 비전 검사",
+      "title_en": "Uncertainty-Aware VLM Agent for Visual Inspection",
+      "description_en": "A small model does the first inspection, and a large vision-language model checks again only when the first result is uncertain. The goal is accurate inspection that misses no defects while keeping cost down.",
+      "domain_en": "Manufacturing"
     },
     {
       "domain": "교육",
@@ -109,15 +139,20 @@
       "links": [
         {
           "label": "관련 연구 1",
-          "url": "https://arxiv.org/pdf/2606.09470"
+          "url": "https://arxiv.org/pdf/2606.09470",
+          "label_en": "Related work 1"
         },
         {
           "label": "관련 연구 2",
-          "url": "https://arxiv.org/pdf/2607.19219"
+          "url": "https://arxiv.org/pdf/2607.19219",
+          "label_en": "Related work 2"
         }
       ],
       "track": "applied",
-      "title_ko": "AI 기반 답안 자동 채점"
+      "title_ko": "AI 기반 답안 자동 채점",
+      "title_en": "Automated Scoring of Answers with AI",
+      "description_en": "Models that assess speaking and writing answers, built on real exam data.",
+      "domain_en": "Education"
     },
     {
       "domain": "무역",
@@ -125,11 +160,15 @@
       "links": [
         {
           "label": "관련 연구",
-          "url": "https://aclanthology.org/2026.acl-long.937.pdf"
+          "url": "https://aclanthology.org/2026.acl-long.937.pdf",
+          "label_en": "Related work"
         }
       ],
       "track": "applied",
-      "title_ko": "HS Code 자동 분류"
+      "title_ko": "HS Code 자동 분류",
+      "title_en": "Automatic HS Code Classification",
+      "description_en": "Understand product descriptions and assign the right HS Code in the international trade classification system.",
+      "domain_en": "Trade"
     },
     {
       "domain": "금융",
@@ -137,11 +176,15 @@
       "links": [
         {
           "label": "관련 자료 (GitHub)",
-          "url": "https://github.com/Ewha-DAIA/Finance"
+          "url": "https://github.com/Ewha-DAIA/Finance",
+          "label_en": "Resources (GitHub)"
         }
       ],
       "track": "applied",
-      "title_ko": "대체 데이터 기반 시장 영향 분석"
+      "title_ko": "대체 데이터 기반 시장 영향 분석",
+      "title_en": "Market Impact Analysis with Alternative Data",
+      "description_en": "Measure how unstructured data such as social data affects markets, and use it for forecasting.",
+      "domain_en": "Finance"
     },
     {
       "domain": "프라이버시",
@@ -149,11 +192,15 @@
       "links": [
         {
           "label": "관련 연구",
-          "url": "https://arxiv.org/pdf/2502.18545"
+          "url": "https://arxiv.org/pdf/2502.18545",
+          "label_en": "Related work"
         }
       ],
       "track": "applied",
-      "title_ko": "개인정보 탐지와 보호"
+      "title_ko": "개인정보 탐지와 보호",
+      "title_en": "Detecting and Protecting Personal Information",
+      "description_en": "Find personal information in text and handle it safely.",
+      "domain_en": "Privacy"
     }
   ]
 }

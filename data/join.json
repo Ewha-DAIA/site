@@ -14,7 +14,15 @@
         "C5",
         "C8",
         "U5"
-      ]
+      ],
+      "title_en": "Undergraduate Intern",
+      "who_en": "For undergraduates who want hands-on research experience. If you have a topic in mind, we develop it together; if not, you can join one of the lab's ongoing projects.",
+      "items_en": [
+        "Work on one project for at least a semester.",
+        "Solve problems with real data under real constraints and write up the results as a paper.",
+        "Aim to publish at international conferences and journals."
+      ],
+      "papers_title_en": "Papers co-authored with undergraduates"
     },
     {
       "title": "석사 과정",
@@ -23,6 +31,13 @@
         "산학 과제에 참여하며 실제 데이터와 문제를 다룹니다.",
         "정보 검색·추천, LLM, 에이전트 등 핵심 기술을 익힙니다.",
         "연구 결과로 학위 논문을 쓰고, 해외 학회와 저널에 발표합니다."
+      ],
+      "title_en": "M.S. Program",
+      "who_en": "Welcome if you want to solve problems in a field you care about with data analysis and AI, or if you are interested in one of the lab's current research topics.",
+      "items_en": [
+        "Work on real data and problems through industry projects.",
+        "Learn core technologies such as retrieval and recommendation, LLMs, and agents.",
+        "Write a thesis and publish at international conferences and journals."
       ]
     },
     {
@@ -32,12 +47,20 @@
         "에이전트, LLM, 정보 검색 등 핵심 기술 연구를 주도합니다.",
         "연구 결과를 해외 우수 학회와 저널에 발표합니다.",
         "과제 기획과 협력 기관과의 공동 연구에 참여합니다."
+      ],
+      "title_en": "Ph.D. Program (incl. integrated M.S./Ph.D.)",
+      "who_en": "Welcome if you want to go deep into core technology and shape new research directions, or dig deeply into one of the lab's current topics.",
+      "items_en": [
+        "Lead research on core technologies such as agents, LLMs, and retrieval.",
+        "Publish at top international conferences and journals.",
+        "Take part in project planning and joint research with partner institutions."
       ]
     }
   ],
   "contact": {
     "email": "yeop@ewha.ac.kr",
-    "note": "연구 참여, 대학원 진학, 진로, 창업 등 어떤 이야기든 편하게 연락 주세요. 메일 제목에 [DAIA 면담]을 붙이고, 간단한 자기소개와 관심 분야를 함께 적어 주시면 됩니다."
+    "note": "연구 참여, 대학원 진학, 진로, 창업 등 어떤 이야기든 편하게 연락 주세요. 메일 제목에 [DAIA 면담]을 붙이고, 간단한 자기소개와 관심 분야를 함께 적어 주시면 됩니다.",
+    "note_en": "Feel free to reach out about joining research, graduate school, careers, startups, or anything else. Please put [DAIA Meeting] in the subject line and include a short introduction and your interests."
   },
   "research_tracks": {
     "title": "두 가지 연구 트랙",
@@ -47,7 +70,10 @@
         "id": "applied",
         "title": "응용 연구",
         "who": "관심 있는 도메인이 있는 학생을 환영합니다.",
-        "text": "금융, 교육, 법률, 제조, 무역 등 관심 있는 분야에 데이터 사이언스를 결합해 실제 문제를 풉니다. 필요하면 해당 분야의 전문가와 함께 일하며 현장의 데이터와 제약을 직접 다룹니다. 연구 결과는 저널에 발표하고, 산업 현장에 적용하거나 특허로 이어 갑니다."
+        "text": "금융, 교육, 법률, 제조, 무역 등 관심 있는 분야에 데이터 사이언스를 결합해 실제 문제를 풉니다. 필요하면 해당 분야의 전문가와 함께 일하며 현장의 데이터와 제약을 직접 다룹니다. 연구 결과는 저널에 발표하고, 산업 현장에 적용하거나 특허로 이어 갑니다.",
+        "title_en": "Applied Research",
+        "who_en": "Students with a domain they care about are welcome.",
+        "text_en": "Combine data science with a field you care about, such as finance, education, law, manufacturing, or trade, to solve real problems. When needed, you work with experts in that field on real data and constraints. Results are published in journals, applied in industry, or turned into patents."
       },
       {
         "id": "core",
@@ -55,13 +81,26 @@
         "who": "AI 기술 자체에 관심 있는 학생을 환영합니다.",
         "text": "자연어 처리, 에이전틱 AI, 에이전트 메모리, AI 안전성과 평가처럼 AI 시스템의 핵심 기술을 연구합니다. 새로운 방법을 제안하고 벤치마크로 검증해 우수 학회와 저널에 발표합니다.",
         "keywords": [
-          "자연어 처리 · LLM",
+          "자연어 처리·LLM",
           "에이전틱 AI",
           "에이전트 메모리",
-          "AI 안전성 · 평가",
+          "AI 안전성·평가",
           "정보 검색"
+        ],
+        "title_en": "Core AI Research",
+        "who_en": "Students interested in AI technology itself are welcome.",
+        "text_en": "Research the core technology of AI systems, such as natural language processing, agentic AI, agent memory, and AI safety and evaluation. Propose new methods, validate them with benchmarks, and publish at top conferences and journals.",
+        "keywords_en": [
+          "NLP & LLMs",
+          "Agentic AI",
+          "Agent memory",
+          "AI safety & evaluation",
+          "Information retrieval"
         ]
       }
-    ]
-  }
+    ],
+    "title_en": "Two Research Tracks",
+    "subtitle_en": "DAIA Lab does both applied research on domain problems and core AI research that advances AI itself."
+  },
+  "intro_en": "DAIA Lab solves real industry problems with data analysis and AI. We work on real data together with companies, institutions, and experts from many fields, apply the results in practice, and publish them. We are looking for undergraduate interns and graduate students to join us."
 }

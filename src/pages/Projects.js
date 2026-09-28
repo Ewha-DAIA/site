@@ -57,7 +57,6 @@ export default async function Projects() {
     <section class="page-content">
       <div class="ra-page-header">
         <h1 class="page-title">${ko ? '프로젝트' : 'Projects'}</h1>
-        ${langToggle('toggleProjectLang', lang)}
       </div>
 
       <div class="pj-container">

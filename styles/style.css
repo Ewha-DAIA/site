@@ -3539,3 +3539,87 @@ a.join-paper:hover { border-color: var(--accent-color); color: var(--accent-colo
 @media (prefers-reduced-motion: reduce) { .rm-node.is-selected .rm-dot, .rm-node.is-selected .rm-node-pulse { animation: none; } }
 .professor-bio p { margin: 0 0 0.9rem; }
 .professor-bio p:last-child { margin-bottom: 0; }
+
+/* Global language switch in the header */
+.nav-lang { display: inline-flex; margin-left: 1rem; border: 1px solid var(--border-color); border-radius: 999px; padding: 2px; flex-shrink: 0; }
+.nav-lang[hidden] { display: none; }
+.nav-lang-btn { border: none; background: none; font-family: inherit; font-size: 0.8rem; padding: 0.25rem 0.7rem; border-radius: 999px; color: var(--text-secondary); cursor: pointer; }
+.nav-lang-btn.active { background: var(--accent-color); color: #fff; font-weight: 600; }
+.navbar { gap: 1.5rem; }
+
+
+/* =====================================================================
+   Quieter, hand-made look (applied last so it overrides earlier rules)
+   - one typeface (Pretendard) for Korean and English
+   - fewer boxes: sections separated by space and thin rules
+   - fewer pills and decorative effects
+   ===================================================================== */
+:root {
+  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+  --font-display: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+}
+body { font-family: var(--font-sans); letter-spacing: -0.01em; }
+.page-title, .rs-section-title, .rs-card-title, .rs-headline, .home-path-title, .rm-panel-title { letter-spacing: -0.02em; }
+
+/* Page language switch */
+.page-lang { display: inline-flex; gap: 0.1rem; font-size: 0.85rem; margin-left: auto; }
+.page-lang-btn { border: none; background: none; font-family: inherit; font-size: 0.85rem; padding: 0.2rem 0.45rem; color: var(--text-secondary); cursor: pointer; }
+.page-lang-btn + .page-lang-btn { border-left: 1px solid var(--border-color); }
+.page-lang-btn.active { color: var(--text-primary); font-weight: 700; }
+.page-lang-floating { position: absolute; right: max(var(--spacing-md), calc((100vw - 1200px) / 2)); top: 84px; z-index: 5; }
+.ra-page-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+
+/* Section headings: no underline animation, no eyebrow labels */
+.rs-section-header .rs-section-title::after { display: none; }
+.rs-section-title { font-size: 1.5rem; }
+.rs-section { margin-top: 5rem; }
+
+/* Reveal effects off: content is simply there */
+.rs-reveal, .rs-reveal.rs-in { opacity: 1 !important; transform: none !important; transition: none; }
+.rs-pipeline li { opacity: 1; animation: none; }
+.rm-try { animation: none; }
+
+/* Principles / explanation: columns with a top rule instead of cards */
+.rs-principle, .rs-explain-item {
+  background: none; border: none; border-top: 1px solid var(--text-primary); border-radius: 0;
+  padding: 1rem 0 0; box-shadow: none;
+}
+.rs-explain-item:hover { box-shadow: none; border-color: var(--accent-color); }
+.rs-principles, .rs-explain { gap: 2rem; }
+.rs-principle-num { color: var(--text-secondary); font-weight: 600; font-size: 0.85rem; }
+
+/* Research header: flat panel */
+.rs-hero { border-radius: 8px; border: none; background: #f3f5f4; }
+
+/* Research side panel and diagram frame: lighter */
+.rm-canvas, .rm-panel { border-radius: 8px; }
+
+/* Join Us: tracks as two columns divided by a rule, no cards */
+.join-research-tracks { gap: 0; }
+.join-rtrack { background: none; border: none; border-radius: 0; border-top: 1px solid var(--text-primary); padding: 1.25rem 2rem 0 0; }
+.join-rtrack + .join-rtrack { padding-left: 2rem; border-left: 1px solid var(--border-color); }
+.join-rtrack-core, .join-rtrack-applied { border-top: 1px solid var(--text-primary); }
+.join-track-tag { background: none !important; border: none !important; padding: 0; color: var(--accent-color) !important; font-size: 0.85rem; }
+.join-keywords-plain { margin: 0.25rem 0 0; font-size: 0.9rem; color: var(--text-primary); }
+.join-topic-link, a.join-topic-link { border: none; padding: 0; border-radius: 0; font-size: 0.85rem; margin-right: 1rem; background: none; text-decoration: underline; text-underline-offset: 3px; }
+a.join-topic-link:hover { background: none; color: var(--accent-light); }
+.join-topic-link-muted { text-decoration: none; }
+.join-papers { flex-direction: column; gap: 0.25rem; }
+.join-paper { border: none; border-radius: 0; padding: 0; background: none; font-weight: 500; }
+.join-tab { font-size: 0.95rem; }
+
+
+/* Projects: calmer cards */
+.pj-card { border-radius: 8px; }
+.pj-card:hover { transform: none; box-shadow: none; border-color: var(--text-secondary); }
+.pj-badge { border-radius: 4px; }
+
+/* Smaller radii across the board */
+.rs-partner { border-radius: 6px; }
+.news-more { border-radius: 4px; }
+/* Research structure without an outer box: the diagram sits on the page,
+   the side panel is a plain column with a rule on its left */
+.rm-canvas { border: none; background: none; padding: 0; border-radius: 0; }
+.rm-panel { border: none; border-left: 1px solid var(--border-color); border-radius: 0; background: none; padding: 0.5rem 0 0.5rem 1.75rem; }
+.rm-radial .rm-trust-field { opacity: 0.6; }
+@media (max-width: 960px) { .rm-panel { border-left: none; border-top: 1px solid var(--border-color); padding: 1.25rem 0 0; } }
