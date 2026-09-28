@@ -405,7 +405,8 @@
       "description_ko": "여러 AI 에이전트와 사람이 함께 전략을 세우는 방법을 연구합니다.",
       "description": "Humans and AI agents planning strategy together.",
       "partners": [
-        "서울대학교"
+        "서울대학교",
+        "UCLA"
       ],
       "papers": [
         "J3"
@@ -505,7 +506,8 @@
     "카카오뱅크": "./assets/projects/kakaobank.svg",
     "삼성전자": "./assets/projects/samsung_electronics.png",
     "이화여자대학교": "./assets/projects/ewha.png",
-    "CAPRA": "./assets/projects/capra.avif"
+    "CAPRA": "./assets/projects/capra.avif",
+    "UCLA": "./assets/projects/ucla.png"
   },
   "domains_title_ko": "분야별 연구와 협력 기관",
   "domains_title": "Domains, Publications & Partners",

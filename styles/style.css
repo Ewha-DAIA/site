@@ -3623,3 +3623,26 @@ a.join-topic-link:hover { background: none; color: var(--accent-light); }
 .rm-panel { border: none; border-left: 1px solid var(--border-color); border-radius: 0; background: none; padding: 0.5rem 0 0.5rem 1.75rem; }
 .rm-radial .rm-trust-field { opacity: 0.6; }
 @media (max-width: 960px) { .rm-panel { border-left: none; border-top: 1px solid var(--border-color); padding: 1.25rem 0 0; } }
+
+/* Mobile fixes */
+@media (max-width: 960px) {
+  /* Research side panel: no inner scroll on small screens, so the page scrolls normally */
+  .rm-panel { position: static; max-height: none; overflow: visible; overscroll-behavior: auto; }
+}
+@media (max-width: 720px) {
+  /* Join Us research tracks: stacked, each with its own rule on top */
+  .join-research-tracks { grid-template-columns: 1fr; gap: 2rem; }
+  .join-rtrack, .join-rtrack + .join-rtrack { padding: 1.25rem 0 0; border-left: none; }
+}
+
+/* Mobile scrolling fix.
+   `overflow-x: hidden` on body/#app/#main-content turns those elements into their own
+   scroll areas, so on phones a swipe could get caught by an inner area instead of the page.
+   `clip` hides horizontal overflow without creating a scroll area. */
+body, #app, #main-content { overflow-x: hidden; overflow-x: clip; }
+@media (max-width: 960px) {
+  /* Home news: show the full list instead of a nested scroll box */
+  .news-list-compact.is-open { max-height: none; overflow: visible; overscroll-behavior: auto; }
+}
+/* Tab row on Join Us: horizontal swipe only, vertical swipes pass to the page */
+.join-tabs { touch-action: pan-x pan-y; overscroll-behavior-x: contain; }

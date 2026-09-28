@@ -15,7 +15,7 @@ const routes = {
   '/people/professor': () => import('./pages/People/Professor.js?v=7'),
   '/people/members': () => import('./pages/People/Members.js?v=3'),
   '/people/alumni': () => import('./pages/People/Alumni.js'),
-  '/research': () => import('./pages/Research.js?v=43'),
+  '/research': () => import('./pages/Research.js?v=44'),
   '/publications': () => {
     // Redirect to international by default
     window.location.hash = '#/publications/international';

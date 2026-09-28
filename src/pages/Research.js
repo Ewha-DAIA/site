@@ -319,7 +319,7 @@ function renderPanel(id) {
       ` : ''}
       ${id
         ? `<button class="rm-reset" onclick="rmSelect(null)">${ko() ? '← 처음으로' : '← Back to overview'}</button>`
-        : `<p class="rm-hint">${ko() ? '왼쪽에서 항목을 눌러 자세히 보세요.' : 'Select an item for details.'}</p>`}
+        : `<p class="rm-hint">${ko() ? '항목을 눌러 자세히 보세요.' : 'Select an item for details.'}</p>`}
     </div>
   `;
 }
