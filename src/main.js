@@ -26,7 +26,7 @@ const routes = {
   '/publications/patent': () => import('./pages/Publications/Patent.js'),
   '/teaching': () => import('./pages/Teaching.js?v=5'),
   '/gallery': () => import('./pages/Gallery.js?v=3'),
-  '/contact': () => import('./pages/Contact.js?v=6'),
+  '/contact': () => import('./pages/Contact.js?v=8'),
   '/join': () => import('./pages/Join.js?v=18'),
   '/projects': () => import('./pages/Projects.js?v=15'),
 };

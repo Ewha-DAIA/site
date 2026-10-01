@@ -3646,3 +3646,5 @@ body, #app, #main-content { overflow-x: hidden; overflow-x: clip; }
 }
 /* Tab row on Join Us: horizontal swipe only, vertical swipes pass to the page */
 .join-tabs { touch-action: pan-x pan-y; overscroll-behavior-x: contain; }
+
+.contact-rooms { margin: 0.4rem 0 0 1.1rem; padding: 0; list-style: disc; color: var(--text-secondary); line-height: 1.8; }

@@ -10,8 +10,11 @@ export default function Contact() {
           <div class="info-item">
             <div class="info-details">
               <h3>Location</h3>
-              <p>이화여자대학교 ECC B219-2<br>
-              서울특별시 서대문구 이화여대길 52, 03760</p>
+              <p>서울특별시 서대문구 이화여대길 52, 이화여자대학교 (03760)</p>
+              <ul class="contact-rooms">
+                <li>교수 연구실: 진선미관 418호</li>
+                <li>학생 연구실: ECC B219-2</li>
+              </ul>
             </div>
           </div>
           
