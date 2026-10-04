@@ -1,5 +1,36 @@
 [
   {
+    "id": 15,
+    "era": "ewha",
+    "title_ko": "Ewha Value-up 기술사업화 지원사업",
+    "title": "Ewha Value-up Technology Commercialization Program",
+    "sponsor_ko": "이화여자대학교",
+    "sponsor": "Ewha Womans University",
+    "period": "2026.10 –",
+    "role_ko": "연구책임자",
+    "role": "Principal Investigator",
+    "ongoing": true,
+    "logos": [
+      "./assets/projects/ewha.png"
+    ]
+  },
+  {
+    "id": 16,
+    "era": "ewha",
+    "title_ko": "수출 중단 스코어링 모델 검증 및 개선",
+    "title": "Validation and Improvement of an Export Discontinuation Scoring Model",
+    "sponsor_ko": "KOTRA · 페더레이션",
+    "sponsor": "KOTRA · Federation",
+    "period": "2026.10 –",
+    "role_ko": "연구참여자",
+    "role": "Participating Researcher",
+    "ongoing": true,
+    "logos": [
+      "./assets/projects/KOTRA_Logo.png",
+      "./assets/projects/federation.png"
+    ]
+  },
+  {
     "id": 1,
     "era": "ewha",
     "title_ko": "Agentic AI 운용 신뢰성 확보를 위한 안전화 기술 연구",
@@ -51,7 +82,7 @@
     "title": "Intelligent Smart City Operation and Governance through AI Agents",
     "sponsor_ko": "이화여자대학교 · Ewha Global Excellence Program (EGEP)",
     "sponsor": "Ewha Womans University · Ewha Global Excellence Program (EGEP)",
-    "period": "2026 –",
+    "period": "2026.03 –",
     "role_ko": "참여연구원",
     "role": "Participating Researcher",
     "ongoing": true,
