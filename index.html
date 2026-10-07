@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NM1TBG08VM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // Page views are sent from src/main.js on every route change (this is a single-page site)
+      gtag('config', 'G-NM1TBG08VM', { send_page_view: false });
+    </script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="./assets/ewha/symbol.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,7 +54,7 @@
       <main id="main-content"></main>
       <footer id="main-footer"></footer>
     </div>
-    <script type="module" src="./src/main.js?v=39"></script>
+    <script type="module" src="./src/main.js?v=40"></script>
     <!-- SEO: noscript fallback for crawlers that don't execute JavaScript -->
     <noscript>
       <div>

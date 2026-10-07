@@ -70,6 +70,14 @@ async function renderPage({ keepScroll = false } = {}) {
     const PageComponent = module.default;
     mainContent.innerHTML = await PageComponent();
     updateLangSwitch(path);
+    // One Google Analytics page view per page shown (not on language switches)
+    if (!keepScroll && typeof window.gtag === 'function') {
+      window.gtag('event', 'page_view', {
+        page_title: document.title,
+        page_location: window.location.href,
+        page_path: path,
+      });
+    }
     window.scrollTo(0, keepScroll ? scrollY : 0);
     if (module.mount) {
       setTimeout(() => module.mount(), 0);
