@@ -87,7 +87,7 @@
       "W1",
       "C5",
       "C9",
-      "U4",
+      "J4",
       "C3",
       "C4"
     ],
@@ -145,7 +145,7 @@
         "text_ko": "왜 그런 판단을 했는지 사람이 이해할 수 있는 형태로 설명합니다. 현장 전문가가 결과를 믿고 쓰기 위한 조건입니다.",
         "text": "Explaining why a model decided what it did, in terms people understand, so domain experts can trust and use it.",
         "papers": [
-          "U4",
+          "J4",
           "C3"
         ],
         "projects_ko": [
@@ -312,7 +312,7 @@
       "description_ko": "설비 센서, 공정, 시장 데이터처럼 시간에 따라 변하는 데이터를 분석합니다. 이상 탐지와 예측을 연구합니다.",
       "description": "Analyzing data that changes over time, such as equipment sensors, processes, and markets, for anomaly detection and forecasting.",
       "papers": [
-        "U4",
+        "J4",
         "C1"
       ],
       "domains": [
@@ -386,7 +386,7 @@
         "서울대학교"
       ],
       "papers": [
-        "U4",
+        "J4",
         "C1"
       ]
     },
@@ -636,7 +636,7 @@
       "C5",
       "C2",
       "C6",
-      "U4"
+      "J4"
     ]
   },
   "applied_research": {

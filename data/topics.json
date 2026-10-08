@@ -64,9 +64,9 @@
       "description": "반도체 공정 단계의 구조를 모델에 반영해 설비 이상을 탐지하고, 어떤 센서와 단계에서 문제가 생겼는지 설명합니다.",
       "links": [
         {
-          "label": "관련 논문: Attention Divergence for Semiconductor Anomaly Detection (심사 중)",
+          "label": "관련 논문: Attention Divergence for Semiconductor Anomaly Detection (Advanced Engineering Informatics)",
           "url": "",
-          "label_en": "Related paper: Attention Divergence for Semiconductor Anomaly Detection (under review)"
+          "label_en": "Related paper: Attention Divergence for Semiconductor Anomaly Detection (Advanced Engineering Informatics)"
         }
       ],
       "title_en": "Semiconductor Anomaly Detection with Process Knowledge",

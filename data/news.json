@@ -46,5 +46,11 @@
     "date": "2026-10",
     "content_ko": "국립중앙박물관에서 'AI 에이전트 구축 프로세스의 이해와 박물관 학예 데이터 기반 에이전트 제작 및 활용 방안'을 주제로 강연합니다.",
     "content": "Talk at the National Museum of Korea on building AI agents and using museum curatorial data to create and apply them."
+  },
+  {
+    "id": 9,
+    "date": "2026-10",
+    "content_ko": "\"Attention Divergence via Process-Step Masked Self-Supervised Learning for Semiconductor Anomaly Detection\" 논문이 Advanced Engineering Informatics (JCR 상위 2%)에 게재 승인되었습니다.",
+    "content": "Our paper \"Attention Divergence via Process-Step Masked Self-Supervised Learning for Semiconductor Anomaly Detection\" has been accepted to Advanced Engineering Informatics (JCR top 2%)."
   }
 ]

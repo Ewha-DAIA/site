@@ -3648,3 +3648,11 @@ body, #app, #main-content { overflow-x: hidden; overflow-x: clip; }
 .join-tabs { touch-action: pan-x pan-y; overscroll-behavior-x: contain; }
 
 .contact-rooms { margin: 0.4rem 0 0 1.1rem; padding: 0; list-style: disc; color: var(--text-secondary); line-height: 1.8; }
+
+/* Home hero image: 80% of the previous height (500px -> 400px on desktop, 480px -> 384px on phones) */
+.hero-visual { min-height: 400px; }
+.visual-slider { height: 400px; }
+@media (max-width: 768px) {
+  .hero-section { min-height: 384px; }
+  .visual-slider { height: 100%; }
+}

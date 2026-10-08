@@ -12,18 +12,6 @@
     ]
   },
   {
-    "id": "U4",
-    "title": "Attention Divergence via Process-Step Masked Self-Supervised Learning for Semiconductor Anomaly Detection",
-    "authors": "Yeonmo Kim, **Sangyeop Kim†**",
-    "venue": "",
-    "year": "Under Review",
-    "link": "",
-    "tags": [
-      "Manufacturing",
-      "Anomaly Detection"
-    ]
-  },
-  {
     "id": "U3",
     "title": "Multi-Domain Learning for Sentencing Factor Extraction in Korean Criminal Judgments",
     "authors": "Min Choi, **Sangyeop Kim†**",
@@ -57,6 +45,21 @@
     "tags": [
       "HCI",
       "LLM"
+    ]
+  },
+  {
+    "id": "J4",
+    "title": "Attention Divergence via Process-Step Masked Self-Supervised Learning for Semiconductor Anomaly Detection",
+    "authors": "Yeonmo Kim, **Sangyeop Kim†**",
+    "venue": "Advanced Engineering Informatics\n(JCR top 2%, IF 11.5)",
+    "year": "2026",
+    "link": "",
+    "tags": [
+      "Manufacturing",
+      "Anomaly Detection"
+    ],
+    "badges": [
+      "SCIE"
     ]
   },
   {
